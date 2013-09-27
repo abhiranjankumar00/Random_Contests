@@ -1,0 +1,62 @@
+Problem Title: Friends everywhere
+Problem Type: Approximation
+Score: 200
+
+In Futaba Kindergarten, where Shinchan studies, there are N students, s_0, s_1...s_(N-1), including Shinchan. Every student knows each other directly or indirectly. Two students knows each other directly if they are friends. Indirectly knowing each other means there is a third students who knows both of them. Knowing each other is a symmetric relation, i.e., if student s_a knows student s_b then student s_b also knows student s_a.
+
+Ai-chan is a new admission in the class. She wants to be friend with all of them. But it will be very cumbersome to befriend each of the N students there. So she decided to befriend some of them such that every student in the class is either a friend of her or friend of friend of her.
+
+Help her to select those students such that befriending them will complete her objective. The lesser number of students the better it is.
+
+Input
+First line of input will contain two space separated integer, N M, number of students at Futaba Kindergarten, excluding Ai-chan, and number of pairs of students who are friend to each other, i.e. they knows each other directly.
+Then follows M lines. In each line there are two space separated integer, s_u s_v, such that student s_u and s_v are friend to each other.
+
+Output:
+In first line print the total number, P, of such students. Then in next line print P space separated index of students, such that befriending them will help Ai-chan to achieve her objective.
+
+Constraints:
+1 <= N <= 10^5
+1 <= M <= min(10^5, N*(N-1)/2)
+0 <= s_u, s_v <= N-1
+s_u != s_v
+Each pair of students (s_u, s_v) knows each other, directly or indirectly.
+
+Score: ((N-P)/N)*200
+
+Sample Input:
+6 7
+0 1
+0 2
+1 2
+1 3
+2 4
+3 4
+3 5
+
+Sample Output:
+4
+0 2 3 5
+
+
+Sample Input #2:
+6 7
+0 1
+0 2
+1 2
+1 3
+2 4
+3 4
+3 5
+
+Sample Output #2:
+3
+1 2 3
+
+Explanation:
+
+Test Case #1: Students (s_0, s_2, s_3, s_5) are to be befriended. s_1 is a friend of s_0 and s_4 is a friend of s_3. So (s_1, s_4) are friends of friends.
+Score = (6-4)/6*200 = 66.67
+
+Test Case #2: Now students (s_1, s_2, s_3) are to be befriended. While s_0 is friend of s_1, s_4 and s_5 are friend of s_3. So (s_0, s_4, s_5) are friends of friends.
+Score = (6-3)/6*200 = 100

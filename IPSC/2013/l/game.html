@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href = "style.css" rel = "stylesheet" type = "text/css" />
+    <script type = "text/javascript" src="jquery-2.0.0.min.js"></script>
+    <script type = "text/javascript" src="game.js"></script>
+    <script type = "text/javascript" src="data.js"></script>
+    <title>Labyrinth</title>           
+  </head>
+    
+  <body>
+    <div id="leftbar">
+      <h3>Select level</h3>
+      <select id="levelselect">
+      </select>
+      <input type="button" id="selectbutton" value="Go" />
+
+      <h3>Control pad</h3>
+      <div id="controlsbox">
+        <div id="controlup" class="control"></div>
+        <div id="controldown" class="control"></div>
+        <div id="controlleft" class="control"></div>
+        <div id="controlright" class="control"></div>
+        <div id="controlpush" class="control"></div>
+      </div>
+
+      <h3>Result sequence</h3>      
+      <div id="resultbox">
+        <textarea id="resultarea" readonly="readonly"></textarea>
+      </div>
+      
+    </div>
+    <div id="mapcontainer">
+      <div id="mapbox">
+        <div id="playertile" class="tile"></div>
+      </div>
+      
+      <div id="widthexpbox">
+        <div id="widthexpander" class="expander" title="Expand horizontally"></div>
+        <div id="widthcontractor" class="expander" title="Contract horizontally"></div>
+      </div>
+      <div id="heightexpbox">
+        <div id="heightexpander" class="expander" title="Expand vertically"></div>
+        <div id="heightcontractor" class="expander" title="Contract horizontally"></div>
+      </div>
+    </div>
+  </body>
+</html>

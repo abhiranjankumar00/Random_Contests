@@ -1,0 +1,173 @@
+#leftbar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 200px;
+  padding-left: 1em;
+  border-right: 3px dotted black;
+}
+
+#mapcontainer {
+  position: absolute;
+  left: 250px;
+  right: 0px;
+  top: 20px;
+  bottom: 0px;
+}
+
+#mapbox {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 1px solid black;
+}
+
+.expander {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url('arrows.png');
+  cursor: pointer;
+}
+
+#widthexpbox {
+  position: fixed;
+  right: 10px;
+  width: 32px;
+  height: 84px;
+}
+
+#heightexpbox {
+  position: fixed;
+  bottom: 10px;
+  width: 84px;
+  height: 32px;
+}
+
+#widthexpander {
+  background-position: 0px 0px;
+  left: 0px;
+  top: 0px;
+}
+
+#widthcontractor {
+  background-position: -32px 0px;
+  left: 0px;
+  top: 52px;
+}
+
+#heightexpander {
+  background-position: -96px 0px;
+  left: 52px;
+  top: 0px;
+}
+
+#heightcontractor {
+  background-position: -64px 0px;
+  left: 0px;
+  top: 0px;
+}
+
+.message {
+  position: absolute;
+  z-index: 2000;
+  top: 30%;
+  bottom: 30%;
+  left: 20%;
+  right: 20%;  
+  text-align: center;
+  margin: auto;
+  background-color: #E0E0E0;
+  text-align: center;
+  border: 1px solid black;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.tile {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 14px;
+  
+  text-shadow:
+  -1px -1px 0 #CCC,
+  1px -1px 0 #CCC,
+  -1px 1px 0 #CCC,
+  1px 1px 0 #CCC;
+}
+
+#playertile {
+  background-image: url('special.png');
+  z-index: 1000;
+}
+
+#controlsbox {
+  margin-left: 1em;
+  margin-top: 2em;
+  position: relative;
+  width: 96px;
+  height: 96px;
+}
+
+.control {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url('controls.png');
+}
+
+.control:hover {
+  cursor: pointer;
+}
+
+#controlup {
+  left: 32px;
+  top: 0px;
+  background-position: -32px 0px;
+}
+
+#controlup:hover {  background-position: -32px -32px; }
+
+#controlleft {
+  left: 0px;
+  top: 32px;
+  background-position: -128px 0px;
+}
+
+#controlleft:hover {  background-position: -128px -32px; }
+
+#controlpush {
+  left: 32px;
+  top: 32px;
+  background-position: 0px 0px;
+}
+
+#controlpush:hover {  background-position: 0px -32px; }
+
+#controlright {
+  left: 64px;
+  top: 32px;
+  background-position: -64px 0px;
+}
+
+#controlright:hover {  background-position: -64px -32px; }
+
+#controldown {
+  left: 32px;
+  top: 64px;
+  background-position: -96px 0px;
+}
+
+#controldown:hover {  background-position: -96px -32px; }
+
+#resultarea {
+  margin: auto;
+  width: 90%;
+  height: 5em;
+  overflow-y: scroll;
+}

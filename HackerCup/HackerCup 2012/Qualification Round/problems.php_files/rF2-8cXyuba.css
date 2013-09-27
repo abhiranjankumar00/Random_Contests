@@ -1,0 +1,56 @@
+/*1327104326,176833977*/
+
+body.transparent_widget,.fbSendButtonFormWidget{background-color:transparent;padding-left:2px;margin-bottom:1px}
+.fbSendButtonFormWidget .uiNormalTokenizer .tokenarea{padding-top:3px}
+.fbSendButtonFormWidget .uiNormalTokenizer .uiTypeaheadView{width:215px}
+.uiTypeaheadView .compact li.hintText{cursor:default;height:14px;min-height:0;padding-left:6px}
+.fbSendButtonFormContainer .body{padding:8px}
+.fbSendButtonFormContainer .url{color:gray;margin-bottom:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fbSendButtonFormContainer .title{font-size: 12px}
+.fbSendButtonFormContainer .title,.fbSendButtonFormContainer .url,.fbSendButtonFormContainer .summary{width:250px}
+.fbSendButtonFormContainer .text_exposed_show{display:none}
+.fbSendButtonFormContainer table{table-layout:auto;width:100%}
+.fbSendButtonFormContainer .label{color:#777;padding:5px 5px 5px 0;text-align:right;width:auto;white-space:nowrap}
+.fbSendButtonFormContainer form{border:1px solid #323232;position:relative;top:1px;z-index:1}
+.fbSendButtonFormContainer.side form{top:0}
+.fbSendButtonFormWidgetLight form{border-bottom:2px solid #283e6c}
+.fbSendButtonFormWidgetDark form{border-bottom:2px solid #ccc}
+.async_saving .buttons{background:url(https://s-static.ak.facebook.com/rsrc.php/v1/yb/r/GsNJNwuI-UM.gif) no-repeat left;padding-left:20px}
+.fbSendButtonFormWidget .footer{clear:both;padding:8px 0;width:100%}
+.fbSendButtonFormWidgetLight .footer{border-top:1px solid #bdc7d8;background-color:#f2f2f2}
+.fbSendButtonFormWidgetDark .footer{border-top:1px solid #444;background-color:#333}
+.fbSendButtonFormWidget .buttons{float:right;padding-right:8px}
+.fbSendButtonFormContainer .addMessageLink{float:right;text-decoration:none}
+.fbSendButtonFormContainer .textwrapper{padding-right:8px}
+.fbSendButtonFormContainer .textwrapper textarea{height:30px;min-height:30px;max-height:250px;min-width:100%;max-width:100%;width:100%}
+.fbSendButtonFormWidgetLight form{background-color:#fff}
+.fbSendButtonFormWidgetDark form,.fbSendButtonFormWidgetDark .tokenarea,.fbSendButtonFormWidgetDark label{background-color:#101010;color:#fff}
+.fbSendButtonFormContainer label{font-weight:normal}
+.fbSendButtonFormContainer .msgArea{margin:0}
+.fbSendButtonFormWidget div.fbSendButtonFormContainer .nodeImageBlock img{width:50px}
+div.fbSendButtonFormWidgetDark .textwrapper textarea,div.fbSendButtonFormWidgetDark .uiTypeahead{background-color:#000;color:#fff;border:1px solid #434343}
+div.fbSendButtonFormWidget .uiTypeahead input,div.fbSendButtonFormWidgetDark .uiTypeahead input{color:gray}
+div.fbSendButtonFormWidget .uiTypeahead input::-webkit-input-placeholder{color:gray}
+div.fbSendButtonFormWidget .uiTypeahead input:-moz-placeholder{color:gray}
+div.fbSendButtonFormWidget .uiTypeahead .textInput:focus{color:#000}
+div.fbSendButtonFormWidgetDark .uiTypeahead .textInput:focus{color:#fff}
+div.fbSendButtonFormWidgetDark .uiTypeahead .wrap{border:none}
+div.fbSendButtonFormWidgetDark textarea{padding-right:5px}
+.fbSendButtonFormWidget .nub{clear:both;height:6px;left:0;line-height:0;margin:0;padding:0;position:relative;top:2px;width:20px;z-index:2}
+.fbSendButtonFormWidget .side .nub{height:20px;width:6px;padding:0;margin:0;line-height:0;position:absolute;z-index:2;top:5px}
+.fbSendButtonFormWidgetLight .side.rtl .nub{background:transparent url(https://s-static.ak.facebook.com/rsrc.php/v1/yK/r/R95msRfVr6a.gif) no-repeat 0 0}
+div.fbSendButtonFormWidgetLight .side .nub{background:transparent url(https://s-static.ak.facebook.com/rsrc.php/v1/yn/r/vAOEfR4cWQM.gif) no-repeat 0 0;left:-1px}
+.fbSendButtonFormWidgetLight .nub{background:url(https://s-static.ak.facebook.com/rsrc.php/v1/yv/r/agyQHs6yLID.gif) no-repeat scroll 8px 0 transparent}
+.fbSendButtonFormWidgetDark .nub{background:url(https://s-static.ak.facebook.com/rsrc.php/v1/yL/r/7vbl1usLlV8.gif) no-repeat scroll 8px 0 transparent}
+.fbSendButtonFormWidgetDark .side .nub{background:url(https://s-static.ak.facebook.com/rsrc.php/v1/yB/r/Gvy8rtIdNBK.gif) no-repeat 0 0}
+.fbSendButtonFormWidgetDark .side.rtl .nub{background:url(https://s-static.ak.facebook.com/rsrc.php/v1/yp/r/E-2vs4qfO7d.gif) no-repeat 0 0}
+.fbSendButtonFormWidgetDark .uiTypeaheadView{background-color:#000;border-top:1px solid #434343}
+.fbSendButtonFormWidgetDark .uiTypeaheadView .compact{background-color:#000;border-bottom-color:#ccc}
+.fbSendButtonFormWidgetDark .uiTypeaheadView .text{color:#fff}
+.fbSendButtonFormWidgetDark .uiTypeaheadView .details{color:gray}
+.fbSendButtonFormWidgetDark .uiTypeaheadView li,.fbSendButtonFormWidgetDark .uiTypeaheadView .hintText{border-color:#000}
+.HackerCupTimer_display{font-family:monospace}
+.hackerCupLargeTimer{font-size: 18px}
+.hackerCupAnnounceTimer{text-align:center}
+
+#bootloader_BHdx1 { height: 42px; }

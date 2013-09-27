@@ -1,0 +1,313 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="1849136637453519_data/base.css" title="Mooshak in color" type="text/css">
+
+<script language="JavaScript" type="text/javascript"><!--
+
+Submitting=false;
+function submission(form) { Submitting=true; }
+
+// set hidden variable "command" with my name
+function name2command(obj) {
+obj.form.command.value=obj.name;
+}
+
+// select problem from appropriated object
+function selected_problem(label) {
+var value;
+
+if(document.problems.problem.options != undefined)
+value=select_problem_from_list(label);
+else if(document.problems.problem.length != undefined)
+value=select_problem_from_radio(label);
+else if(label && document.problems.problem.title != undefined)
+value=document.problems.problem.title;
+else if(document.problems.problem.value != undefined)
+value=document.problems.problem.value;
+else
+value=undefined;
+
+return value;
+}
+
+// return selected problem from an array of radio buttons
+function select_problem_from_radio(label) {
+
+with(document.problems.problem) {
+if(length==0) {
+// with a single radio button JS
+// doesn't create an array to reflect it
+if(checked)
+if(label)
+return title;
+else
+return value;
+} else {
+with(document)
+for(var i=0; i < problems.length; i++)
+if(problems[i].name == "problem" && problems[i].checked)
+return problems[i].value;
+}
+}
+return undefined;
+}
+
+// return selected problem from a selection list
+function select_problem_from_list(label) {
+with(document.problems.problem) {
+
+for(var i=0; i < options.length; i++)
+if(options[i].selected)
+if(label)
+return options[i].text;
+else
+return options[i].value;
+}
+return undefined;
+}
+
+
+function check_problem(form) {
+
+if(selected_problem(false) == undefined) {
+alert('Choose a problem');
+return false;
+} else {
+return true;
+}
+}
+
+function copy_problem(button) {
+with(button.form.problem) {
+if((value=selected_problem(false)) == undefined) {
+value="";
+}
+}
+}
+
+function check_program(form) {
+
+// check only program submissions
+
+if((form.problem.value=selected_problem(false)) == undefined) {
+alert('Choose a problem');
+return false;
+}
+
+if(Submitting) {
+Submitting=false;
+
+if(form.program.value=="") {
+alert('Program not specified');
+return false;
+} else if(invalidExtension(form.program.value)) {
+alert(  'Program with invalid extension\n'+
+'use only '+validExtensions() );
+return false;
+} else {
+var msg='Submitting to problem '+selected_problem(true);
+msg += '\nConfirm?';
+return confirm(msg);
+}
+} else { // Printing
+if(form.program.value=="") {
+alert('File to print not specified');
+return false;
+} else {
+return confirm('Confirm printout?');
+}
+}
+}
+
+Language = new Array();
+Language["cpp"]="CPP";
+Language["c"]="C";
+Language["java"]="JAVA";
+
+function invalidExtension(fx) {
+var p;
+for(var ext in Language) {
+if((p=fx.lastIndexOf("."+ext))==-1)
+continue;
+if(p+ext.length+1==fx.length) {
+return false;
+}
+}
+return true;
+}
+
+function validExtensions() {
+var valid="";
+for(var ext in Language) {
+if(valid != "")
+valid += " , ";
+valid += "."+ext;
+}
+return valid;
+}
+
+//--></script>
+</head>
+<body>
+
+<form method="post" name="problems" target="answer" onsubmit="return check_problem(this);" action="1849136637453519">
+<input name="page" value="0" type="hidden">
+<input name="command" value="view" type="hidden">
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+<tbody><tr>
+<th rowspan="4" bgcolor="777777" width="2%">&nbsp;</th>
+<th id="BaseForte" rowspan="4" width="20%">
+<font color="white">
+<h2><font color="pink">ONLINE_CONTEST_2012</font></h2>
+<h4>amicpc120461<font></font></h4><font>
+
+<p align="right">
+<img src="1849136637453519_data/mooshak-16.png">
+<font color="Pink" size="-1">shak 1.6b11</font>
+&nbsp;
+</p>
+</font>
+</font></th>
+<th width="2%">&nbsp;</th>
+<th id="Title"> Problem	</th>
+<td id="Base" width="2%">&nbsp;
+</td><td id="Base"> 
+<input text="A" name="problem" value="A_PAIRSOCKS" title="A - A_PAIRSOCKS" style="background: red;" onclick="this.form.view.click();" type="radio">A &nbsp;&nbsp;
+<input checked="checked" text="B" name="problem" value="B_STICKS" title="B - STICKS" style="background: yellow;" onclick="this.form.view.click();" type="radio">B &nbsp;&nbsp;
+<input text="C" name="problem" value="C_SUMRANGE" title="C - SUMRANGE" style="background: blue;" onclick="this.form.view.click();" type="radio">C &nbsp;&nbsp;
+<input text="D" name="problem" value="D_TEAMDIV" title="D - TEAMDIV" style="background: green;" onclick="this.form.view.click();" type="radio">D &nbsp;&nbsp;
+<input text="E" name="problem" value="E_SEQUENCES" title="E - sequence" style="background: white;" onclick="this.form.view.click();" type="radio">E &nbsp;&nbsp; </td>
+<th id="Base" width="2%">&nbsp;</th>
+<th id="Base" width="10%">
+<font size="-1">
+<input class="Button" name="view" onclick="name2command(this);" value="View" type="submit">
+</font>
+</th>
+<th id="Base" width="10%">
+<font size="-1">
+<input class="Button" name="ask" onclick="name2command(this);" value="Ask" type="submit">
+</font>
+</th>
+
+</tr>
+
+
+<form method="post" name="programs" enctype="multipart/form-data" onsubmit="return check_program(this);" target="answer" action="1849136637453519?"></form>
+<input name="command" value="empty" type="hidden">
+<input name="problem" value="" type="hidden">
+<tr>
+<th width="2%">&nbsp;</th>
+<th id="Title"> Program </th>
+<td id="Base" width="2%">&nbsp;
+</td><td id="Base">
+<input name="program" type="file">
+</td>
+<th id="Base" width="2%">&nbsp;</th>
+<th id="Base" width="10%">
+<font size="-1">
+<input class="Button" name="analyze" value="Submit" onclick="
+name2command(this);
+submission(this.form);" type="submit">
+</font>
+</th>
+<th id="Base" width="10%">
+<font size="-1">
+<input class="Button" name="print" onclick="name2command(this);" disabled="disabled" value="Print" type="submit">
+
+</font>
+</th>
+</tr>
+
+
+<!-- select listings -->
+<form method="post" name="listings" target="answer" action="1849136637453519?"></form>
+<input name="command" value="listing" type="hidden">
+<input name="problem" value="" type="hidden">
+<input name="page" value="0" type="hidden">
+<input name="all_problems" value="true" type="hidden">
+<input name="all_teams" value="true" type="hidden">
+<tr>
+
+<th width="2%">&nbsp;</th>
+<th id="Title"> Listing	</th>
+<td id="Base" width="2%">&nbsp;
+</td><td id="Base" colspan="4">
+<input checked="checked" name="type" value="submissions" onclick="
+copy_problem(this);
+this.form.submit();" type="radio">
+Submissions
+
+<input name="type" value="ranking" onclick="
+copy_problem(this);
+this.form.submit();" type="radio">
+Ranking
+
+<input name="type" value="questions" onclick="
+copy_problem(this);
+this.form.submit();" type="radio">
+Questions
+
+<input name="type" value="printouts" onclick="
+copy_problem(this);
+this.form.submit();" type="radio">
+Printouts
+</td>
+
+
+</tr>
+<!-- Control listings  -->
+<tr>
+
+<th width="2%">&nbsp;</th>
+<th id="Title">
+
+<a href="http://icpclive.amrita.ac.in/%7Emooshak/cgi-bin/execute/1849136637453519?guest" target="_blanc">
+<font size="-1">more...</font>
+</a>
+
+</th>
+<td id="Base" width="2%">&nbsp;
+</td><td id="Base">
+
+Update every 
+<select size="1" name="time" onchange="this.form.submit();" class="Normal"><option value="1">1
+</option><option value="2">2
+</option><option selected="selected" value="5">5
+</option></select> minutes
+&nbsp; with 
+<select size="1" name="lines" onchange="this.form.submit();" class="Normal"><option value="5">5
+</option><option value="10">10
+</option><option selected="selected" value="15">15
+</option><option value="20">20
+</option><option value="50">50
+</option><option value="100">100
+</option><option value="200">200
+</option></select> lines
+
+</td>
+<th id="Base" width="2%">&nbsp;</th>
+
+<th id="Base" rowspan="1">
+
+<input class="Button" value="Help" onclick="window.open('1849136637453519?faq','work');" type="button">
+
+</th>
+<th id="Base" rowspan="1">
+
+<input class="Button" value="Logout" onclick="window.open('1849136637453519?logout','_top');" type="button">
+
+</th>
+
+
+</tr>
+
+
+</tbody></table>
+
+</form>
+
+
+
+
+</body></html>

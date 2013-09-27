@@ -1,0 +1,19 @@
+Title: Lowest Common Ancestor, Difficulty: Medium
+
+Given a tree with N nodes. Each node have a unique number 0, 1, ..., (N-1) as their id and the root node hs id 0. Given a list of M nodes, (u_0, u_1, ..., u_(M-1)), find the lowest node, v, such that all the given nodes lies on the subtree rooted at v.
+
+Constraints:
+1 <= N <= 10^5
+1 <= M <= N
+0 <= u_i <= N-1,	0 <= i <= M-1]
+u_j != u_k,			0 <= j, k <= M-1 AND j != k
+
+Input
+First line of input contains two space separated integers, N M, number of nodes in the tree and number of nodes in the list to search, respectively. Then follows N lines. Each line contains the node id, number of childs it has and then follows the list of id of child current node has. After this in last line a list of M node id is given.
+
+Output
+Print the node id of node v that has all of the M nodes in its subtree and has the minimum height.
+
+Sample Input #0
+0
+

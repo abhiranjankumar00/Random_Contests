@@ -1,0 +1,50 @@
+/*1327422798,169775559*/
+
+.sp_dqk1g3{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yc/r/1d0BDN9GIG4.png);background-repeat:no-repeat;display:inline-block;height:12px;width:17px}
+.sx_01b807{background-position:-0px -0px}
+.sx_9cbbd2{background-position:-0px -13px}
+.sp_ener08{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yW/r/QgG2yXyUogv.png);background-repeat:no-repeat;display:inline-block;height:14px;width:17px}
+.sx_b03d51{width:12px;height:12px;background-position:-0px -30px}
+.sx_19c4d2{background-position:-0px -0px}
+.sx_585661{background-position:-0px -15px}
+.uiDataTable{width:100%;border-bottom:solid 1px #a6a6a6;-moz-box-shadow:0 1px 0 rgba(0, 0, 0, .05);box-shadow:0 1px 0 rgba(0, 0, 0, .05);color:#000}
+.uiDataTable th{background:#eee url(http://static.ak.fbcdn.net/rsrc.php/v1/yY/r/zR5rPVu7Dbe.png) repeat 0 0;border:solid 1px #999;border-bottom-color:#888;border-right:none;line-height:normal !important;vertical-align:middle;white-space:nowrap}
+.uiDataTable .lastColumn{border-right:solid 1px #999}
+.uiDataTable .right{text-align:right}
+.uiDataTable .columnLabel{padding:3px 6px 4px;font-weight:bold;color:#333;display:-moz-inline-box;display:inline-block}
+.ff4 .uiDataTable .columnLabel{padding:3px 6px}
+.uiDataTable .sortable{width:100%;cursor:pointer;text-decoration:none;display:block}
+.uiDataTable .sortable .columnLabel{margin-right:13px}
+.uiDataTable .right .sortable .columnLabel{margin-right:0;margin-left:13px}
+.uiDataTable .sortedAsc .sortable .columnLabel,.uiDataTable .sortedDesc .sortable .columnLabel{margin:0}
+.uiDataTable .sortable:active{background:#ddd;border-bottom:solid 1px #999;margin-bottom:-1px}
+.uiDataTable .sortable .asc,.uiDataTable .sortable .desc{display:none}
+.uiDataTable .sortedAsc .sortable .asc,.uiDataTable .sortedDesc .sortable .desc{display:-moz-inline-box;display:inline-block;margin:0 6px 1px -2px}
+.uiDataTable td{padding:6px 7px;border-left:solid 1px #fbfbfb}
+.uiDataTable .odd td{background-color:#f2f2f2}
+.uiDataTable .clickableRow:hover td{background-color:#d8dfea;cursor:pointer}
+.uiDataTable .selectedRow td,.uiDataTable .selectedRow:hover td{background-color:#657ba7;border-left:solid 1px #657ba7}
+.uiDataTable .hidden{display:none}
+.uiDataTable .firstRow{border-left:solid 1px #bbbbbb !important}
+.uiDataTable .lastRow{border-right:solid 1px #bbb}
+.problem_statement .throbber{display:none}
+.problem_statement .async_saving .throbber{display:inline;margin:5px 0 0 5px}
+.hc_icon{margin-top:2px}
+.hc_pre{margin:0}
+.example_inputs{width:40%;float:left}
+.example_outputs{width:45%;float:right}
+.example_inputs pre{margin:0}
+.example_outputs pre{margin:0}
+.hidden_element{display:none}
+.left_label{float:left;margin-left:15px}
+.right_label{float:right;margin-right:15px}
+.scoreboard_row .simple{text-align:center}
+.scoreboard_row.is_me.odd td{background-color:#adbad4;border-color:#d6ddea}
+.scoreboard_row.is_me td{background-color:#d6ddea}
+.scoreboard_row.is_me td,
+.scoreboard_row.is_friend td{font-weight:bold}
+.HackerCupTimer_display{font-family:monospace}
+.hackerCupLargeTimer{font-size: 18px}
+.hackerCupAnnounceTimer{text-align:center}
+
+#bootloader_WD6YM { height: 42px; }

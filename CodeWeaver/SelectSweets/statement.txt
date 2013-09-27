@@ -1,0 +1,29 @@
+In this festive season, Chef have received a lot of orders of sweets. One day, while packing sweets, he counted number of different ways he can pack sweets in a box. Two ways are different, if there exist a sweet for which their count in resulting boxes are different. In other words two box are same if they contain same number of all types of sweets. Box has a property that they can contain only a fixed number of sweets, neither less nor more.
+
+If chef has three types for sweets S_1, S_2, S_3 and three boxes (B1, B2, B3). He has to pack 6 sweets in each boxes. If he pack sweets in a way that box has configuration B1{S_1 = 1, S_2 = 0, S_3 = 5}, B2(S_1 = 1, S_2 = 3, S_3 = 2) and B3(S_1 = 1, S_2 = 0, S_3 = 5), then Box B1 and B2 are said to have different configuration, while Box B1 and B3 are same.
+
+But wait, there are some sweets of which customers are very fond of. So they gave you a list of such sweets and the minimum number for each sweet they want in their box. If a sweet is not in this list, then chef can pack any number (including zero) of this type of sweet. Now help chef in count different number of way he can pack sweets in a box. Chef has infinite supply of each types of sweets.
+
+Input:
+	First line of input contain three integers, N M K, number of sweets to be packed in a box, number of types of sweets chef had and length of sweet's list which customer gives to him respectevely. Then follows K lines. In each lines there are two integers, A_i X_i, type of sweet and minimum number of sweet he has to put in each box (1 <= i <= M).
+
+Output:
+	Find number of different ways chef can pack sweets in a box. As this number can be very large print answer modulo 1000000007 (10^9 + 7).
+
+Sample Input #0
+4 2 1
+1 2
+
+Sample Output #0
+3
+
+Sample Input #1
+5 3 1
+2 2
+
+Sample Output #1
+45
+
+
+Explanation for Sample Input #0
+Chef has to pack 4 sweets in a box, and he have two types of sweets (S_1, S_2). Customer has mentioned that the box must have at least 2 sweet of sweet type #1. Then there are 3 number of ways of packing sweets, represented by (S_1 = 2, S_2 = 2), (S_1 = 3, S_2 = 1), (S_1 = 4, S_2 = 0). 

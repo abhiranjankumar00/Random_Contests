@@ -1,0 +1,81 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="1849136637453519_data/base.css" type="text/css">
+</head>
+<body>
+<center>
+<table cellpadding="20" width="100%">
+<tbody><tr>
+<td id="Base">
+
+
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <title>Template</title>
+
+
+<h1 style="font-family: Arial;"><small>ACM International Collegiate
+Programming Contest, Asia-Amritapuri Site, 2012</small></h1>
+<h2>Problem E: Sequence<br>
+</h2>
+Given a sequence S of '0' and '1' of length N,  a subsequence of S is 
+obtained by omitting some elements of S without changing the order of 
+the remaining elements of S.<br>
+<br>
+Given a subarray of a sequence S starting from some position 'a' and 
+ending at some position 'b' (1 &lt;= a &lt;= b &lt;= N), both inclusive,
+ denoted by S(a,b), you have report the length of longest non-decreasing
+ subsequence of S(a,b). By non-decreasing, we mean that a '0' never 
+appears after a '1' in the subsequence.<br>
+<h3>Input (STDIN):</h3>
+The first line contains T, the number of test cases. Then T test case follow, each test case being in the following format.<br>
+The first line contains N, the length of sequence S. The next line 
+contains a string of 0's and 1's of length exactly N. The next line 
+contains Q, which means that you have to answer Q queries. The next Q 
+lines contain a pair of integers a,b (1 &lt;= a &lt;= b &lt;= N), 
+meaning that you have to report the length of longest non decreasing 
+subsequence of S(a,b).<br>
+There is no blank line between test cases.<br>
+<h3>Output (STDOUT):</h3>
+Output Q lines per test case, which is the answer for each query. Do not print a blank line between test cases.<br>
+<h3>Constraints:</h3>
+1 &lt;= T &lt;= 10<br>
+1 &lt;= N &lt;= 100,000<br>
+1 &lt;= Q &lt;= 100,000<br>
+<h3>Sample Input:</h3>
+<span style="font-family: Courier New,Courier,monospace;">
+1<br>
+13<br>
+0011101001110<br>
+6<br>
+1 13<br>
+4 13<br>
+1 9<br>
+6 9<br>
+3 3<br>
+6 10<br>
+</span><br>
+<h3>Sample Output:</h3>
+<span style="font-family: Courier New,Courier,monospace;">
+9<br>
+6<br>
+6<br>
+3<br>
+1<br>
+4<br>
+</span><br>
+<h3>Explanation:</h3>
+In the first query, the longest subsequence is formed by picking 1st,2nd,3rd,4th,5th,7th,10th,11th,12th digits of the sequence.<br>
+In the second query, you can pick the 6th, 8th, 9th, 10th, 11th and 12th digits.<br>
+<br>
+<h3>Time limit : 3s</h3>
+<h3>Memory limit : 64MB</h3>
+<br>
+
+
+</td>
+</tr>
+</tbody></table>
+</center>
+
+
+</body></html>

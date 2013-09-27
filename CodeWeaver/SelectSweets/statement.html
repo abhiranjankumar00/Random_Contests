@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Select Sweets</title>
+<meta name="Generator" content="Vim/7.3">
+<meta name="plugin-version" content="vim7.3_v10">
+<meta name="syntax" content="none">
+<meta name="settings" content="use_css,pre_wrap">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace;}
+body { font-family: monospace; }
+-->
+</style>
+</head>
+<body>
+<pre>
+In this festive season, Chef have received a lot of orders of sweets. One day, while packing sweets, he counted number of different ways he can pack sweets in a box. Two ways are different, if there exist a sweet for which their count in resulting boxes are different. In other words two box are same if they contain same number of all types of sweets. Box has a property that they can contain only a fixed number of sweets, neither less nor more.
+
+If chef has three types for sweets S<sub>1</sub>, S<sub>2</sub>, S<sub>3</sub> and three boxes (B<sub>1</sub>, B<sub>2</sub>, B<sub>3</sub>). He has to pack 6 sweets in each boxes. If he pack sweets in a way that box has configuration B<sub>1</sub>{S<sub>1</sub> = 1, S<sub>2</sub> = 0, S<sub>3</sub> = 5}, B<sub>2</sub>(S<sub>1</sub> = 1, S_<sub> </sub>= 3, S<sub>3</sub> = 2) and B<sub>3</sub>(S<sub>1</sub> = 1, S<sub>2</sub> = 0, S<sub>3</sub> = 5), then Box B<sub>1</sub> and B<sub>2</sub> are said to have different configuration, while Box B<sub>1</sub> and B<sub>3</sub> are same.
+
+But wait, there are some sweets of which customers are very fond of. So they gave you a list of such sweets and the minimum number for each sweet they want in their box. If a sweet is not in this list, then chef can pack any number (including zero) of this type of sweet. Now help chef in count different number of way he can pack sweets in a box. Chef has infinite supply of each types of sweets.
+
+Input:
+	First line of input contain three integers, N M K, number of sweets to be packed in a box, number of types of sweets chef had and length of sweet's list which customer gives to him respectevely. Then follows K lines. In each lines there are two integers, A<sub>i</sub> X<sub>i</sub>, type of sweet and minimum number of sweet he has to put in each box (1 &lt;= i &lt;= M).
+
+Output:
+	Find number of different ways chef can pack sweets in a box. As this number can be very large print answer modulo 1000000007 (10^9 + 7).
+
+Constraints:
+	1 &lt;= N &lt;= 1000000
+	1 &lt;= M &lt;= 1000000
+	1 &lt;= K &lt;= M
+
+Sample Input #0
+4 2 1
+1 2
+
+Sample Output #0
+3
+
+
+Sample Input #1
+5 3 2
+1 2
+2 1
+
+Sample Output #1
+6
+
+
+Sample Input #2
+5 1 1
+3 6
+
+Sample Output #2
+0
+
+
+Explanation for Sample Input #0
+Chef has to pack 4 sweets in a box, and he have two types of sweets (S<sub>1</sub>, S<sub>2</sub>). Customer has mentioned that the box must have at least 2 sweet of sweet type #1. Then there are 3 number of ways of packing sweets, represented by (S<sub>1</sub> = 2, S<sub>2</sub> = 2), (S<sub>1</sub> = 3, S<sub>2</sub> = 1), (S<sub>1</sub> = 4, S<sub>2</sub> = 0).
+
+Explanation for Sample Input #2
+Chef has to pack 5 sweets in a box, while according to list he has to pack at least 6 sweets of sweet type 3. And it is not possible.
+</pre>
+</body>
+</html>

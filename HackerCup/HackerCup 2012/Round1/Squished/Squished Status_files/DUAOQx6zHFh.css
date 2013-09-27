@@ -1,0 +1,313 @@
+/*1327615835,169775812*/
+
+.UINarrowFrame_Container{width:560px;padding:0;overflow:hidden}
+.UINarrowFrame_FullWidth{width:600px}
+.UINarrowFrame_CenterPage{margin:0 auto}
+#checkpointChangePasswordIntro{margin-bottom:10px}
+body.contact_importer{background-color:transparent}
+div.file_help{padding:10px;display:none;border:1px solid #ccc;background:#fcfcfc;margin-top:6px;margin-bottom:6px}
+.fh_title{font-size: 11px}
+div.fh_sect{margin:4px}
+div.fh_instr{display:none;margin:3px 3px 0 0;padding:6px}
+#ci_module_list{background-color:#fff}
+#ci_module_list li.ci_module:hover{background-color:#edeff4;cursor:pointer}
+#ci_module_list li.ci_module:hover a.expand_link{text-decoration:underline}
+#ci_module_list li.ci_module.expanded{background-color:#edeff4;cursor:default}
+#ci_module_list li.expanded .expand_link{display:none}
+#ci_module_list li.expanded .expand_button{display:none}
+#ci_modules_hidden .ci_module:first-child{border-top-width:1px}
+#wizard_step #ci_module_list,#wizard_step #ci_module_list li.ci_module.expanded,#wizard_step #ci_module_list li.ci_module.expanded:hover{background-color:#ededed}
+#wizard_step #ci_module_list li.ci_module:hover{background-color:#fff}
+#ci_module_list .ci_module{border-color:#d8dfea}
+#ci_module_list .ci_module .ci_module_header{height:35px;line-height:35px;vertical-align:middle}
+#ci_module_list .ci_module .expand_link{display:inline-block;margin-top:11px}
+#ci_module_list .ci_module .expand_button{display:inline-block;margin-top:7px}
+#ci_module_list .other_tools .ci_module_content{margin-left:42px;margin-right:42px}
+#ci_module_list .other_tools .ci_module_content a{line-height:22px}
+#ci_module_list .ci_module .contact_importer_widget .label{text-align:right;width:130px}
+#ci_compact_list .ci_compact_icon_holder{background-repeat:no-repeat;background-position:center;height:40px;padding:5px 0 0 5px;width:40px}
+#ci_compact_list .ci_compact_icon_holder:hover{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/y9/r/dyjIxuzzMJx.png);cursor:pointer}
+#ci_compact_list .ci_compact_icon_holder.selected{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yH/r/CNhELnGRSSd.png)}
+#ci_compact_list .ci_compact_icon{display:inline}
+.ci_compact_module_header{border-top:solid 1px #d8dfea;margin-top:8px;padding:5px 0 2px 0}
+#ci_compact_right{width:410px}
+.editor{margin:3px auto 7px}
+.editor_panel{background:#f7f7f7;padding:10px 0}
+.editor td{border:none;margin:0;padding:5px 1px 1px}
+.editor td.label{color:#666;font-weight:bold;padding-right:10px}
+.editor td.label small{color:#999}
+.editor .suboption_group{border-bottom:1px solid #c0c0c0;border-top:1px solid #c0c0c0;margin-left:20px}
+.editor .suboption_group td{padding:0}
+.editor tr.tallrow{vertical-align:top}
+.editor tr.tallrow td.label{padding-top:7px}
+.editor tr.subrow{vertical-align:top}
+.editor tr.subrow td{margin-top:0;padding-top:0}
+.editor .buttons{padding:10px 0 0;text-align:center}
+.editor .buttons_left{padding-left:0;text-align:left}
+.editor .buttons .inputsubmit,
+.editor .buttons .inputbutton{margin:2px 4px}
+.editor .buttons_left .inputsubmit,
+.editor .buttons_left .inputbutton{margin-left:0}
+.editor label{color:#000;font-weight:normal;width:200px}
+.editor label.row_description{color:inherit;font-weight:inherit;width:inherit}
+.editor table.option_field td{margin:0;padding:0 2px 0 0}
+.editor .option_caption{color:#777;font-weight:normal;padding-bottom:2px;width:260px}
+.editor .inputtext,
+.editor .inputpassword{margin-left:0;width:300px}
+.editor textarea{margin-left:0;width:300px}
+.editor textarea.clearWidth{width:auto}
+.editor select{margin-left:0;margin-right:5px}
+.editor .checkbox_array{margin:0;padding:5px 0 0}
+.editor .checkbox_array td{margin:0;padding:0 0 0}
+.editor .checkbox_array label{padding-right:15px}
+.editor .relationship .inputtext{width:200px}
+.editor .highschool input{margin-right:5px;width:235px}
+.editor .school input{margin-right:5px;width:235px}
+.editor .school .inputtext{width:200px}
+.editor_panel .editor .school table.nopadding td{padding:0 0 0 0}
+.editor .school .school_typeahead{width:210px}
+.editor .select xselect{width:200px}
+.editor .two_level_select select{width:145px}
+.editor .text_with_privacy input{margin-right:5px;width:105px}
+.editor .text_with_privacy select{margin-left:5px;width:auto}
+.editor .text_with_privacy td{color:#777}
+.editor .divider{border-bottom:solid 1px #fff;border-top:solid 1px #ccc;height:0;margin:5px 0;overflow:hidden}
+.editor .date_time span, .editor .inline_text{margin:0 4px 0 -2px}
+.editor .note{width:300px}
+.editor .hiddenrow{display:none}
+.editor .calendar_popup{display:inline}
+.editor .calendar_at_time{padding:0 0 0 8px}
+.editor .calicon{padding:0 2px 1px 0}
+.editor .calendars td{padding:0}
+.editor #start_calendar, .editor #end_calendar{background-color:#fff;border-bottom:solid 1px #3b5998;border-left:solid 1px #d8dfea;border-right:solid 1px #d8dfea;margin-left:147px;margin-top:-3px;position:absolute;width:168px;z-index:100}
+.editor #box_separator{padding:0 3px 0 3px}
+.autoimport{line-height:16px;margin:0 0 5px 0}
+.autoimport li{margin-top:6px}
+.autoimport p{margin-top:5px}
+.autoimport .error{background:#FFEBE8 none repeat scroll 0;border:1px solid #dd3c10;margin:10px 0;padding:10px}
+.autoimport .status{margin:10px 0}
+.autoimport #note{margin-top:10px}
+.autoimport .message{margin-top:10px}
+.findfriends #webmail .header{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/y6/r/HhuARCoWAr9.gif)}
+.findfriends #email_application .header{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yb/r/b7VwC8kZCwJ.gif)}
+.findfriends #chatfind .header{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yQ/r/WBWgBVeCy7Y.gif)}
+.findfriends #friend_guesser .header{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/OpnXm-HZHKy.gif)}
+.findfriends #people_search .header{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yB/r/Unmn04Ngmxd.gif)}
+.findfriends #people_search .search_query .inputtext{float:left;padding:4px 3px 3px 3px;line-height:14px;margin:0}
+.findfriends #people_search .UISearchQuery_Submit{padding:0 2px 1px 2px}
+.findfriends #people_search #classmates_links{clear:left;padding-top:10px}
+.findfriends #browse_by_name .header{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yJ/r/RVElCNYrs5z.gif)}
+.findfriends #people_search .content{padding-left:25px}
+.findfriends #people_search .search_query{margin:10px 0 20px 0}
+.findfriends #people_search .inputsubmit{margin:0 5px;padding:2px 0;width:75px}
+.findfriends #people_search #q_ff{width:205px}
+.findfriends #people_search .content li{padding-bottom:5px}
+#browse_by_name .alphabet_list a{float:left;font-weight:bold;margin:10px 7px 0 0}
+#new_ff #intro h2{font-size: 14px;font-weight:bold}
+#new_ff #intro h3{font-size: 14px}
+#new_ff p{color:#555}
+#new_ff #intro p{margin:7px 20px 20px 0;display:block;font-size: 11px;line-height:15px;color:#666}
+#new_ff .box_row{margin-bottom:15px}
+#new_ff .box_row .box{width:290px}
+#new_ff .box_row .left{float:left}
+#new_ff .box_row .right{float:right}
+#new_ff .box_row .full{width:603px}
+#new_ff .header{background-position:left 11px;background-repeat:no-repeat;border-top:1px solid #e0e0e0;padding:12px 0 5px 24px}
+#new_ff #friend_guesser .header{padding:12px 10px 5px 24px}
+#new_ff .icq_header{border-top:1px solid #e0e0e0;padding:12px 0 5px 0}
+#new_ff .header .main_title{float:left;font-size: 13px;font-weight:bold}
+#new_ff .icq_main_title{font-size: 13px;font-weight:bold;padding-left:2px}
+#new_ff .icq_content{padding:1px 0 16px 23px}
+#new_ff .icq_content .editor .buttons{padding-top:0}
+#new_ff .icq_content .ci_submit_button{padding-left:0}
+#ff_icq_row{padding:14px 0 0 0}
+#new_ff .header .subtext{float:right;margin-right:10px}
+#new_ff .header .main_subtitle{float:left;clear:left;padding-top:5px;color:#666;line-height:16px}
+#new_ff .box_row .box .content{padding:0 10px}
+#new_ff .box_row .box .content p{color:#555;margin-bottom:0}
+#new_ff .box_row .box .content .friend_guesses{margin:0 0 0 5px}
+#new_ff .box_row #chatfind p{line-height:16px;margin-top:13px;margin-bottom:15px}
+#new_ff .box_row #people_search .inputsearch{background:none;padding-left:5px}
+#new_ff .box_row #people_search #q{width:150px}
+#new_ff .box_row #people_search .inputsubmit{margin:0 0 1px 5px;width:55px}
+#new_ff .box_row #people_search .search_query{margin:15px 0 15px 15px}
+#new_ff .box_row #people_search #classmates_links{margin:0 0 0 15px}
+#new_ff .box_row #webmail .content #webmail_contact_reason{float:left;padding:3px;line-height:14px;width:163px;margin-top:10px}
+#new_ff .box_row #address_book_upload{margin-left:12px}
+#new_ff .box_row #address_book_upload #upload{margin:2px 0}
+#new_ff .box_row #webmail .content #error{margin:10px 20px 10px 0}
+#new_ff .box_row #chatfind .content #error{margin:10px 0}
+#new_ff .box_row #webmail .content #error h1,#new_ff .box_row #chatfind .content #error h1{font-size: 12px}
+#new_ff .box_row #webmail .content #error p,#new_ff .box_row #chatfind .content #error p{font-size: 11px}
+#new_ff .box_row #webmail .content #address_book_upload .instructions{padding-top:10px}
+#new_ff .box_row #webmail .header #webmail_contact_link,#new_ff .box_row #webmail .content #address_book_upload{display:none}
+#new_ff .box_row #webmail .content #address_book_upload{float:left}
+#new_ff .box_row #webmail .header #upload_contact_link{display:block}
+#new_ff .box_row #webmail .right_align_span{float:right}
+#chatfind .contact_importer_widget .ci_login,#chatfind .contact_importer_widget .ci_password{width:150px}
+#chatfind .caption{color:#777}
+#new_ff #friend_guesser .see_more{display:block;line-height:20px}
+#new_ff #friend_guesser div.see_more{margin:10px 13px 10px 15px;border-top:1px solid #d8dfea}
+#new_ff #friend_guesser a.see_more{background:#f2f2f2 url(http://static.ak.fbcdn.net/rsrc.php/v1/yj/r/Fg783X5g9Fx.gif) no-repeat left 2px;border:none;padding-left:21px}
+#new_ff #friend_guesser a.see_more:hover{background-color:#e6edf8}
+#new_ff .box_row #friend_guesser .content a.see_more{font-weight:bold}
+#new_ff .friend_grid .friend_grid_col{margin-left:16px}
+#new_ff .box_row #people_search.full .search_query{float:left;padding-right:30px}
+#new_ff .box_row #people_search.full .search_query .inputsubmit{width:75px}
+#new_ff .box_row #people_search.full .search_query #q{width:200px}
+#new_ff .box_row #people_search.full #classmates_links{font-weight:bold;float:left;margin-top:15px}
+#new_ff #chat_expand_links li{padding:2px 0}
+#new_ff #browse_by_name .content{padding:0 10px 0 25px}
+#importer_frame{margin-bottom:20px}
+.friends #content{position:relative;padding:0}
+.friends .tabs{padding-top:20px}
+#friendtables:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+#friendtables{display:block}
+#filter{float:left;width:450px}
+#filter a{float:left;clear:right;display:block;width:160px;padding:2px 3px;margin:0 2px 2px 0;color:#000;border:solid 1px #f7f7f7;border-bottom:solid 2px #f7f7f7}
+#filter a:hover{background:white;border:solid 1px #d8dfea;border-bottom:solid 2px #d8dfea;text-decoration:none}
+#filter a.selected{background:white;border:solid 1px #d8dfea;border-bottom:solid 2px #3b5998}
+#friendtables{margin:0;padding:10px 10px 5px;background:#f7f7f7}
+.friendtable{margin:0;padding:9px;margin-bottom:5px;background:white;border:solid 1px #ccc}
+.friendtable .image{vertical-align:top;text-align:left;width:110px}
+.friendtable .info{vertical-align:top;width:386px}
+.friendtable .info table{width:380px}
+.friendtable .dark a{color:#555}
+.friendtable .info td{vertical-align:top;font-size: 11px;line-height:14px;margin:0;padding:0 0 1px 0}
+.friendtable .info .updates{margin:-2px;margin:0;padding:0 0 1px 0;background:#fff8cc;border-bottom:solid 1px #ffe222}
+.friendtable .info .label{width:70px;color:gray}
+.friendtable .info .name{color:#333;font-weight:bold;font-size: 13px;vertical-align:bottom;line-height:15px}
+.friendtable .info .name.label{color:gray;font-weight:normal;font-size: 11px;line-height:15px}
+.friendtable .info .name a{line-height:15px}
+.friendtable .imagecontainer{width:100px;background-color:#f7f7f7;border:1px solid #ccc}
+.friendtable .imagecontainer .image{width:100px}
+.darkcaption div{border-top:1px solid #ccc;background-color:#f7f7f7;width:200px;padding:4px;margin-top:4px}
+.friendtable .classify{width:320px;border:solid 1px hotpink;background:pink}
+.friendtable .actions{vertical-align:top;width:100px}
+.friendtable .actions a,.friendtable .actions span{display:block;margin:0;padding:2px 4px;text-decoration:none;border-bottom:solid 1px #d8dfea}
+.friendtable .actions a:hover{color:#fff;background:#3b5998;text-decoration:none}
+.friendtable .actions .inactive{padding:0 3px 1px 3px;color:gray}
+.friendtable small{padding-left:3px;color:gray}
+#pagebody.confirminvite #content{padding:0}
+.confirmcount{text-align:left;color:#3b5998;font-weight:bold;line-height:21px;font-size: 11px;margin:10px 0 0 0}
+.confirmcount h4{margin:-10px 0 0 0}
+.confirm{padding:5px;margin:0 0 5px;background:white;border:solid 1px #d8dfea}
+.confirm .image{width:110px;text-align:left}
+.confirm td{vertical-align:top}
+.friends .bottompager{float:right}
+#friend_filter_select{width:135px}
+#friends_network_select{width:180px}
+.remove_friends #content{padding:20px 0}
+.FlyoutFriendListMenuNUX{background-color:#f6f6f6;border:1px solid #b3b3b3;box-shadow:0 2px 5px rgba(0, 0, 0, .3);min-height:100%;position:absolute;right:-100%;top:-1px;width:100%;z-index:-1}
+.FlyoutFriendListMenuNUX .content{padding-left:15px}
+.fbNUXWizard .navigationContainer .skipLink,
+.fbNUXWizard .navigationContainer .backLink{line-height:24px}
+.fbNUXWizard .navigationContainer .skipLink input,
+.fbNUXWizard .navigationContainer .backLink input{margin-top:4px}
+.fbNUXWizard .navigationContainer .feedbackLink{line-height:22px}
+.fbNUXWizard .async_saving .navigationContainer{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/yk/r/LOOn0JtHNzb.gif)
+center center no-repeat}
+.fbNUXWizard .navigationContainer .backLink{background:transparent url(http://static.ak.fbcdn.net/rsrc.php/v1/yf/r/uJCfdzyYEAs.gif)
+no-repeat scroll left 42%;padding-left:8px}
+.fbNUXWizard .mainContainer{margin:25px auto 100px auto;width:585px}
+.fbNUXWizard #navHome,
+.fbNUXWizard .tinyman{display:none}
+.fbNUXWizardStepContactImporter #ci_module_list li.ci_module,
+.fbNUXWizardStepContactImporter #ci_module_list li.ci_module.expanded,
+.fbNUXWizardStepContactImporter #ci_module_list li.ci_module.expanded:hover{background:#f2f2f2}
+.fbNUXWizardStepContactImporter #ci_module_list li.ci_module:hover{background:#fff}
+.fbNUXWizardStepContactImporter .contact_importer_widget .inputtext{width:310px}
+.fbNUXWizardStepProfileInformation .infoTable{width:430px}
+.fbNUXWizardStepProfilePicture .container{width:450px;margin:30px auto 0 auto}
+.fbNUXWizardStepProfilePicture .picturePreview{text-align:center;width:212px}
+.fbNUXWizardStepProfilePicture .optionsContainer{width:210px;margin:25px auto 0 auto}
+.fbNUXWizardStepProfilePicture .divider{background:transparent url(http://static.ak.fbcdn.net/rsrc.php/v1/yX/r/VhUL9TRdhxw.gif) repeat-x center;margin:0 auto 15px auto;text-align:center;width:200px}
+.fbNUXWizardStepProfilePicture .divider span{background-color:#ededed;color:#777;margin:0 auto 0 auto;padding:0 4px 0 4px;width:20px}
+.fbNUXWizardStepProfilePicture .options{margin:0 auto 15px auto;padding:0 10px 0 0}
+.fbNUXWizardStepProfilePicture .link{font-size: 15px;font-weight:bold;text-align:center}
+.fbNUXWizardStepProfilePicture .desc{color:#777;font-size: 13px;text-align:center}
+.fbNUXWizardStep .stepTitle{font-size: 15px}
+.auGrid .auGridItemKeitai,
+.auGrid .auGridItemPC{background-position:center 2px;background-repeat:no-repeat;padding-top:25px}
+.auGrid .auGridItemKeitai{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yk/r/PVhHBxXM858.gif)}
+.auGrid .auGridItemPC{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yH/r/s6pk9a8tn4Z.gif)}
+.Locale_ja_JP #navSearch{width:325px}
+.Locale_ja_JP #navSearch .uiSearchInput input{width:290px}
+.weak_pass{font-weight:bold;color:grey}
+.medium_pass{font-weight:bold;color:#00f}
+.strong_pass{font-weight:bold;color:green}
+.short_pass{font-weight:bold;color:orange}
+.eduWorkRow{position:relative}
+.eduWorkYear{left:100%;position:absolute;top:0}
+.eduWorkFields textarea,
+.eduWorkFields .daterange{width:250px}
+.eduWorkFields .daterange select{margin-top:4px}
+.eduWorkFields .label{width:116px}
+.linkPlaceholder,
+.ajaxifying .add_link,
+.eduWorkCollege .degree,
+.noneSelected .eduWorkYear,
+.noneSelected .eduWorkYears,
+.noneSelected .eduWorkFields{display:none}
+.ajaxifying .linkPlaceholder{color:#999;display:inline}
+.ajaxifying .loadingIndicator{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/yb/r/GsNJNwuI-UM.gif) no-repeat right center}
+.sp_4cvf7v{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/y4/r/3RtWKzdxNyP.png);background-repeat:no-repeat;display:inline-block;height:35px;width:35px}
+.sx_43b150{background-position:-0px -0px}
+.sx_cd52ab{background-position:-0px -36px}
+.sx_a7b999{background-position:-0px -72px}
+.sx_831df6{background-position:-0px -108px}
+.sx_dd2b29{background-position:-0px -144px}
+.sp_6etmfq{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yY/r/Xirzwp574xA.png);background-repeat:no-repeat;display:inline-block;height:35px;width:35px}
+.sx_4406ab{background-position:-0px -0px}
+.sx_296414{background-position:-0px -36px}
+.sx_79f085{background-position:-0px -72px}
+.sp_79lz8b{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yC/r/LUp4E3sF9EX.png);background-repeat:no-repeat;display:inline-block;height:35px;width:35px}
+.sx_55fb39{background-position:-0px -0px}
+.sx_2dc930{background-position:-0px -36px}
+.sx_59057d{background-position:-0px -72px}
+.sp_aw0rfx{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yp/r/F4A7zEz89Zs.png);background-repeat:no-repeat;display:inline-block;height:35px;width:35px}
+.sx_1df80e{background-position:-0px -0px}
+.sx_5bce38{background-position:-0px -36px}
+.sx_2ab390{background-position:-0px -72px}
+.sx_1bb122{background-position:-0px -108px}
+.sx_647d7a{background-position:-0px -144px}
+.fbTabGrid .borderItem{border-right:1px solid #e5e5e5}
+.fbTabGridItem{display:block;text-align:center;zoom:1}
+.fbTabGridItem .title{color:#3b5998}
+.fbTabGridItem:hover,
+.fbTabGridItem:active,
+.fbTabGridItem:focus{background-color:#ebeef4;outline:none;text-decoration:none}
+.fbTabGridItem:hover .title{text-decoration:underline}
+.uiStepList ol{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/yP/r/e8iPvmYALrW.png);height:51px;list-style:none;margin:0;padding:0}
+.uiStep{display:inline;list-style-type:none}
+.uiStep .part{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/ya/r/SiholkfAnQs.png);float:left;height:51px}
+.uiStep .back{background-position:-24px 0}
+.uiStep .middle{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/yP/r/e8iPvmYALrW.png)}
+.uiStep .point{background-position:-30px 0;width:21px}
+.uiStep .title{margin-bottom:1px}
+.uiStep .content{margin:11px 10px 0 10px}
+.uiStepSelected .content{margin-left:5px}
+.uiStepListSmallDescription .description{font-size: 9px}
+.uiStepFirst .back{width:3px}
+.uiStepFirst .content{margin-left:15px}
+.uiStepSelected .back{background-position:-21px 0}
+.uiStepSelected .middle{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/yZ/r/MZW8R4cXlo9.png)}
+.uiStepSelected .point{background-position:0 0}
+.uiStepNextSelected .point{background-position:-51px 0}
+.uiStepSelected .title,.uiStepSelected .description,.uiStepSelected a{color:#fff}
+.uiStepSelected a:hover{text-decoration:none}
+.uiStepListSingleLine ol{background:#edeff4;color:#3b5997;height:31px}
+.uiStepListSingleLine .part{height:31px}
+.uiStepListSingleLine .middle{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/yA/r/lFahQXTaTNO.png) repeat-x}
+.uiStepListSingleLine .back{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yk/r/N1ukySZef7Q.png);background-repeat:no-repeat;background-position:0 -160px}
+.uiStepListSingleLine .uiStep .point{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yk/r/N1ukySZef7Q.png);background-repeat:no-repeat;background-position:0 -128px;width:14px}
+.uiStepListSingleLine .uiStepSelected .back{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yk/r/N1ukySZef7Q.png);background-repeat:no-repeat;background-position:-8px -160px}
+.uiStepListSingleLine .uiStepLast .point{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yk/r/N1ukySZef7Q.png);background-repeat:no-repeat;background-position:0 0}
+.uiStepListSingleLine li.uiStepLastSelected .point{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yk/r/N1ukySZef7Q.png);background-repeat:no-repeat;background-position:0 -64px}
+.uiStepListSingleLine .uiStepNextSelected .point{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yk/r/N1ukySZef7Q.png);background-repeat:no-repeat;background-position:0 -32px}
+.uiStepListSingleLine .uiStepSelected .middle{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/yp/r/9UNNaVu8SFB.png) repeat-x}
+.uiStepListSingleLine .uiStepSelected .point{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/yk/r/N1ukySZef7Q.png);background-repeat:no-repeat;background-position:0 -96px}
+.uiStepListSingleLine .uiStep .content{margin:9px 8px 0}
+.uiStepListSingleLineWhite ol{background:#fff}
+
+#bootloader_hwLit { height: 42px; }

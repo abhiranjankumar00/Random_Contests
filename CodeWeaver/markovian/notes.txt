@@ -1,0 +1,7 @@
+Constraints:
+	0 < probSunToSun, probRainToRain, todaySun < 100
+
+Notes:
+1) With increase in days, the probabilties tends to be a constant. 
+2) Probabilites are in percent.
+3) Find the probabilty when it tends to be a constant. Precision range = 10^4 or whatsoever is on codechef judge.

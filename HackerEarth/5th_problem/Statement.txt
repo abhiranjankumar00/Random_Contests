@@ -1,0 +1,26 @@
+Title: Paper Planes, Difficulty: Medium (Ternary Search)
+
+Its spring :) Time for paper plane. Kasukabe Defense Group have decided to have a paper plane competetion. Masao and Bo, both Shinchan friends, are good at Origami, a japanese art of designing using papers. They have designed very good paper planes which can fly for t seconds and at a constant speed and direction.
+
+They, both, throw their plane in air simultanously. Bingo!!! Kazama gets another chance to show his superior mathematical skill. Now he calculated the minimum distance between them during their flight of t seconds. He knows the initial coordiante of Bo's plane and Masao's plane and along with their speed and direction.
+
+Input:
+First line of input contains an integer, t, time duration of flight. Then in next line initial coordinate of Bo's plane (b_x, b_y, b_z) is given. Next line contains another three space separated integers, bv_x, bv_y, bv_z, the speed of Bo's plane in x-axis, y-axis and z-axis respectevely. In next line, initial coordinate of Masao' Plane (m_x, m_y, m_z) is provided followed by its speed (mv_x, mv_y, mv_z) in x-axis, y-axis and z-axis, respectively in next line.
+
+Output:
+Print the minimum distance which Bo's and Masao's plane can get during the flight. You answer mush have absolute error equal to or less than 10^-6.
+
+
+Constraints:
+0 <= t <= 10000
+-10000 <= b_x, b_y, b_z <= 10000
+-10000 <= bv_x, bv_y, bv_z <= 10000
+-10000 <= m_x, m_y, m_z <= 10000
+-10000 <= mv_x, mv_y, mv_z <= 10000
+
+Sample Input #0
+10000
+10 10 10
+10 10 10 
+-10 -10 -10
+-10 -10 -10

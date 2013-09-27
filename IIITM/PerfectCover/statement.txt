@@ -1,0 +1,39 @@
+Mr. 10-pointer and Mr. Gyani had been trying to count the number of ways to perfectly cover a 1-by-n board with monominoes and dominoes.
+
+With pen-and-pencil they are only able calculate the count for small n. 
+Such as:
+1-by-1 = 1 (only one monomino)
+1-by-2 = 2(either use two monomino or one domino)
+1-by-3 = 3 (either all monomino, or 1 monomino followed by a domino, or 1 domino followed by a monomino).
+
+So they approached Ms. Pavani to help them calculate the same for large n. Help her to code the solution which print the total number of ways mod (10^8 + 7).
+
+Input:
+The first line of the input contains number of test cases, T. Then follows T lines containing a number n, size of baord.
+
+Output:
+For each test case print the number of ways to cover a 1-by-n board mod (10^8 + 7).
+
+Constraints: 
+a) 0 < n <= 10^6
+b) 0 < T <= 10^5
+
+Sample Input:
+4
+1
+2
+3
+500
+
+Sample Output:
+1
+2
+3
+12577845
+
+Note: 
+a) Perfect cover means the whole board should be completely covered, no two monomino/domino overlap each other, neither any of them lie outside of the boundary of baord.
+
+b) Monomino is of block size 1-by-1, and orintation of the monomino is not to be considered.
+
+c) Size of a domino is 1-by-2.

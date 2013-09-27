@@ -1,0 +1,54 @@
+Masao and Naini, both Shinchan friends, are playing "home-home". But wait, they both forgot to bring any lunch box. Being a good partner Naini cannot allow Masao to go office without luch box. So she asked Masao to buy some.
+
+Naini has N food items to be packed in the lunch box and maximum weight each lunch box can hold is W units. Let the wieght of N items be w_0, w_1, ..., w_(N-1) units and each item's weight lies between 1 and W (inclusive). Find the arrangement so that the number of lunch box required to pack all food items is minimised.
+
+Let's say Masao bought K lunch box (b_0, b_1,..., b_(K-1)) for packing N items. For each i'th box {i <- [0, K-1]}, print the indices of food items, j {j <- [0, N-1]}, which is placed in it. Each food item must be placed in only one box.
+
+Help Masao in finding K and respective placement of food items in these boxes.
+
+Constraints
+1 <= N <= 10^5
+1 <= W <= 10^5
+1 <= w_i <= W
+
+Input
+First line of input contains two space separated intergers, N W, numbers of food items to be packed and maximum wieght each lunch box can hold.
+Next line contans N space separted integers, w_0, w_1...w_(N-1), weights of 0'th item, 1'st item, ..., (N-1)'th item.
+
+Output
+In first line print an integer, K, numbers of lunch box required for packing all the food items. Then print K lines. Each of these line represents the content of a box. Each of these lines contains a number M (1 <= M), number of food items to be placed in current box followed by M space separated indexes of food items. 
+
+Scoring:
+Maximum number of lunch box required is N.
+The score will be equal to (N - K) / N * [Score of problem]
+
+Sample Input #1:
+6 6
+1 2 4 3 5 3
+
+Sample Output #1:
+4
+3 0 1 5
+1 3
+1 2
+1 4
+
+Score for Input #1: 66.67
+
+Sample  Input #2:
+6 6
+1 2 4 3 5 3
+
+Sample Output #2:
+3
+2 0 4 
+2 1 2 
+2 5 3 
+
+Score for Input #2: 100.00
+
+Explanation for Case #1:
+Naini used 4 box. 1st box contains 3 items, w_0 = 1, w_1 = 2, w_5 = 3. 2nd box contains 1 item, w_3 = 3. Similarly 3rd and 4th box contains 1 item each, w_2 = 4 and w_4 = 5, respectvely.
+
+Expalanation for Case #2:
+Naini used 3 box. 1st box contains 2 items, w_0 = 1, w_4 = 5. 2nd box contains 2 items, w_1 = 2, w_2 = 4. 3rd box also contains 2 items, w_5 = 3, w_3 = 3.

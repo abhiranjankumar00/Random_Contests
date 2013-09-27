@@ -1,0 +1,40 @@
+class Speak {
+	...
+}
+abstract class Walk {
+	...
+}
+abstract class Eat {
+	...
+}
+abstract class Sleep {
+	...
+}
+
+abstract class WalkWithTwoLegs implements Walk {
+	...
+}
+
+abstract class WalkWithFourLegs implements Walk {
+	...
+}
+
+class LivingBeings extends Speak implements Eat {
+	...
+}
+
+class Human extends extends LivingBeings implements WalkWithTwoLegs, Sleep {
+	...
+}
+
+class Cat extends LivingBeings implements WalkWithFourLegs, Sleep {
+	...
+}
+
+class Dog extends LivingBeings implements WalkWithFourLegs, Sleep {
+	...
+}
+
+class Robots implemts Speak, Walk {
+	...
+}

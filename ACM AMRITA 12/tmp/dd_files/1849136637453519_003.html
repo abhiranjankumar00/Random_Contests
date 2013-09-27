@@ -1,0 +1,85 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="1849136637453519_data/base.css" type="text/css">
+</head>
+<body>
+<center>
+<table cellpadding="20" width="100%">
+<tbody><tr>
+<td id="Base">
+
+
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <title>Template</title>
+
+
+<h1 style="font-family: Arial;"><small>ACM International Collegiate
+Programming Contest, Asia-Amritapuri Site, 2012</small></h1>
+<h2>Problem D: Team Decision<br>
+</h2>
+It is the ICPC season again, and one of the crucial things your team has
+ to decide is which regional (Amrita or Kanpur) to go to.  In order to 
+maximize your team's chances of success, your team should go to the 
+regional that none of your rivals are going to. In fact, every team has 
+this same objective.  
+<br><br>
+Now, assuming that each team goes to exactly one regional and knowing 
+the set of rivals for each team, how many ways are there of assigning 
+teams to regionals such that the above objective is satisfied?    
+<br><br>
+The rivalry relation is not symmetric. That is, team A may think of team
+ B as its rival, but not vice versa.
+Also, two assignments of teams (to Amrita and Kanpur) are considered 
+different if the set of teams assigned to either regional differs 
+(between the assignments).
+Since the number of ways can go too large, your answer should be output 
+modulo 10^9 + 7.
+<br>
+<h3>Input (STDIN):</h3>
+The first line gives the number of test-cases, T.<br>
+Each test case begins with N, the number of teams registered.  Teams are numbered 0 to N-1.<br>
+The next N lines describe the rivalry relation:  the i'th of these lines
+ begins with an integer K (between 0 and N-1), denoting the number of 
+rivals of the i'th team. This is followed by K integers, denoting the 
+rivals of the i'th team.<br>
+There is a blank line after each test case.<br>
+<h3>Output (STDOUT):</h3>
+For each test case, output the possible number of assignments to the two
+ regionals such that no team goes to the same regional as any of its 
+rivals. Don't forget to output your answer modulo 10^9 + 7.<br>
+<h3>Constraints:</h3>
+T &lt;= 10<br>
+N &lt;= 20,000<br>
+Total number of rivalries among all teams &lt;= 100,000<br>
+<h3>Sample Input:</h3>
+<span style="font-family: Courier New,Courier,monospace;">2<br>
+4<br>
+2 1 3<br>
+2 0 2<br>
+2 1 3<br>
+2 0 2<br>
+<br>
+2<br>
+1 1<br>
+0</span><br>
+<h3>Sample Output:</h3>
+<span style="font-family: Courier New,Courier,monospace;">2<br>
+2</span><br>
+<h3>Explanation:</h3>
+In the first test case, teams 0 &amp; 2 think that 1 &amp; 3 are their 
+rivals, and vice versa. So, the 2 possibilities are {0, 2} going to 
+Amrita and {1, 3} going to Kanpur, or {0, 2} going to Kanpur and {1, 3} 
+going to Amrita.<br>
+<br>
+<h3>Time limit : 3s</h3>
+<h3>Memory limit : 64MB</h3>
+<br>
+
+
+</td>
+</tr>
+</tbody></table>
+</center>
+
+
+</body></html>

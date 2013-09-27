@@ -1,0 +1,96 @@
+/*1327104260,169776066*/
+
+.dialog_body .dialog_option{padding:14px 0 7px 0}
+.dialog_body .dialog_option input{width:13px;height:13px;padding:0;margin:0;vertical-align:bottom;position:relative;top:0}
+.dialog_body .dialog_option .dialog_option_text{padding-left:5px;text-indent:-15px}
+.friendshipPageLikes .mediaRow{padding-bottom:10px}
+.friendshipPageLikesNoSubheader .label{display:none}
+.friendshipRecommendationDoublePic{width:55px}
+.fbTimelineAds .friendshipRecommendationDoublePic{width:74px}
+.fbTimelineAds .friendshipRecommendationDoublePic .uiProfilePhoto{padding-right:5px}
+.fbTimelineAds .uiTypeahead{margin-bottom:5px}
+.friendshipRecommendationDoublePic .uiProfilePhoto{padding-right:1px}
+#pagelet_friendship_wall .uiComposer ul{padding-left:5px}
+#pagelet_friendship_status_text{line-height:15px;padding-top:4px;width:490px;color:#666}
+.friendshipPageGroups{padding-top:8px;padding-bottom:8px}
+.friendshipPageGroupsBottomBorder{border-bottom:1px solid #e9e9e9}
+.friendshipPageGroupsLeftCol{margin-right:15px}
+.fbTimelineLogLoadingIndicator,.fbTimelineLogFilterThrobber{display:none}
+.async_saving .fbTimelineLogLoadingIndicator{display:block}
+.async_saving .fbTimelineLogFilterThrobber{display:inline-block}
+.fbTimelineLogMonth div.profile-pagelet-section{margin-bottom:0}
+.fbTimelineLogMonth h3{border-bottom:3px solid #e1e1e1;font-size: 15px;line-height:22px}
+.async_saving .fbTimelineLogMonth .uiMorePagerLoader{display:none}
+.async_saving .fbTimelineLogMonth .uiMorePager,.async_saving .fbTimelineLogMonth .uiMorePagerPrimary{display:block}
+.fbTimelineLogNav{margin:20px 35px 10px;padding-bottom:8px}
+.fbTimelineLogHeaderText{font-size: 16px;overflow:hidden;padding-right:25px;text-overflow:ellipsis;white-space:nowrap}
+.fbTimelineLogHeaderText a{color:#333}
+.fbTimelineLogHeaderDescription{color:gray}
+.fbTimelineSearchError{padding-left:20px}
+.fbTimelineLogFilterSelector .uiMenu{max-height:400px;overflow-y:auto}
+.fbTimelineLogFilterSelector .itemLabel{padding-right:7px}
+.fbTimelineAppPrivacySelector{background-color:#f2f2f2;border:1px solid;border-bottom:2px solid;border-color:#c9c9c9;border-radius:3px;padding:8px 25px 9px 15px}
+.fbTimelineAppPrivacySelector .appLogo{vertical-align:middle;height:30px}
+.fbTimelineAppPrivacySelector .appName{font-size: 13px;font-weight:bold}
+.fbTimelineLogBody{margin-bottom:30px}
+.fbTimelineLogYearHeader{border-bottom:3px solid #e1e1e1}
+.fbTimelineLogStream .profile-pagelet-section{margin-bottom:0}
+.fbTimelineLogStream .uiMorePagerPrimary{border:0}
+.fbTimelineLogTimeNav{padding-bottom:3px}
+.fbTimelineLogColumn{margin-top:60px}
+.fbTimelineLogColumn .fbTimelineLogTopSection{margin-top:0;padding:0}
+.fbTimelineLogColumn .fbTimelineSection{padding:20px 25px 10px}
+.fbTimelineLogColumn .fbTimelineSection .uiMorePager{margin:0 -25px -10px}
+.fbTimelineLogIntroMegaphone{background-color:#fff;border:1px solid #c4cde0;border-bottom-width:2px;border-radius:3px;margin-bottom:10px;padding:15px 20px}
+.fbTimelineLogColumn .pendingPostsHeader{background-color:#fff;border-bottom:3px solid #e2e2e2;border-top:0;padding-left:0}
+.fbTimelineLogScrubber .selected ul{display:block}
+.fbTimelineLogScrubber .selected li.selected a{font-weight:bold}
+ul.fbTimelineLogScrubber{margin-left:6px}
+.sp_42swew{background-image:url(https://s-static.ak.facebook.com/rsrc.php/v1/yx/r/cS0XWjqbKbe.png);background-repeat:no-repeat;display:inline-block;height:17px;width:16px}
+.sx_3facf4{background-position:-0px -0px}
+.sx_6ac150{height:16px;background-position:-0px -18px}
+.sp_ezhf7z{background-image:url(https://s-static.ak.facebook.com/rsrc.php/v1/yq/r/pSoiMGzVnoj.png);background-repeat:no-repeat;display:inline-block;height:17px;width:17px}
+.sx_ac036f{width:16px;height:16px;background-position:-0px -90px}
+.sx_3d5dbe{width:16px;height:16px;background-position:-0px -107px}
+.sx_028276{width:16px;height:16px;background-position:-0px -124px}
+.sx_e7111c{background-position:-0px -0px}
+.sx_8b3b2a{background-position:-0px -18px}
+.sx_4ea00b{background-position:-0px -36px}
+.sx_6bbef1{background-position:-0px -54px}
+.sx_0bec4b{background-position:-0px -72px}
+.timelineAllActivityStream .uiListMedium{border-color:#e1e1e1}
+.fbStreamTimelineLogTimestamp{color:#999;font-size: 10px}
+.fbStreamTimelineLogStory,.fbStreamTimelineGrid{width:100%}
+.fbStreamTimelineLogStory .uiStreamAttachments{margin:0}
+.fbStreamTimelineLogStory .songListContainer{position:relative;top:-1px}
+.fbStreamTimelineLogStory .async_saving .uiButtonSuppressed{background:none;border:1px solid #fff}
+.fbStreamTimelineLogStory .async_saving .uiButtonSuppressed:active,.fbStreamTimelineLogStory .async_saving .uiButtonSuppressed:focus,.fbStreamTimelineLogStory .async_saving .uiButtonSuppressed:hover{background-color:#eee;border:1px solid #999}
+.fbStreamTimelineLogStory .async_saving .openToggler .uiButtonSuppressed,.fbStreamTimelineLogStory .async_saving .openToggler .uiButtonSuppressed:active,.fbStreamTimelineLogStory .async_saving .openToggler .uiButtonSuppressed:focus,.fbStreamTimelineLogStory .async_saving .openToggler .uiButtonSuppressed:hover{background-color:#6d84b4;border:1px solid #3b5998;border-bottom-color:#6d84b4}
+.fbStreamTimelineLogStory .async_saving .uiButton .img,.fbStreamTimelineLogStory .uiButtonDisabled .img{opacity:1}
+.fbStreamTimelineLogTimestampContainer{width:45px}
+.fbStreamTimelineLogIconContainer{width:35px}
+.timelineMinistoryGroup .uiStreamStory{padding-right:0}
+.fbTimelineLogSelectorIconContainer{width:16px}
+.timelineAllActivityStream .timelineMinistoryGroup
+.logstoryMessage .passiveName{font-weight:normal}
+.timelineAllActivityStream .activityDayHeader{border-bottom:2px solid #e1e1e1;border-top:0;line-height:20px;margin-top:20px}
+.fbTimelineAllActivityStorySelector,.fbTimelineLogAudienceSelector{text-align:left}
+.fbTimelineAllActivityStorySelector .uiSelectorButton,.fbTimelineAllActivityStorySelector .uiSelectorButton:active,.fbTimelineAllActivityStorySelector .uiSelectorButton:focus,.fbTimelineAllActivityStorySelector .uiSelectorButton:hover,.fbTimelineAllActivityStorySelector .uiButtonSuppressed:active,.fbTimelineAllActivityStorySelector .uiButtonSuppressed:focus,.fbTimelineAllActivityStorySelector .uiButtonSuppressed:hover{background-image:none;height:16px;margin-top:-4px;padding-left:5px;padding-right:5px}
+.fbTimelineAllActivityAudienceSelector .uiSelectorButton,.fbTimelineAllActivityAudienceSelector .uiSelectorButton:active,.fbTimelineAllActivityAudienceSelector .uiSelectorButton:focus,.fbTimelineAllActivityAudienceSelector .uiSelectorButton:hover,.fbTimelineAllActivityAudienceSelector .uiButtonSuppressed:active,.fbTimelineAllActivityAudienceSelector .uiButtonSuppressed:focus,.fbTimelineAllActivityAudienceSelector .uiButtonSuppressed:hover{background-image:none;margin-top:-4px;padding-right:8px}
+.fbTimelineAllActivityStorySelector .openToggler .uiSelectorButton,.fbTimelineAllActivityStorySelector .openToggler .uiSelectorButton:active,.fbTimelineAllActivityStorySelector .openToggler .uiSelectorButton:focus,.fbTimelineAllActivityStorySelector .openToggler .uiSelectorButton:hover,.fbTimelineAllActivityStorySelector .openToggler .uiButtonSuppressed:active,.fbTimelineAllActivityStorySelector .openToggler .uiButtonSuppressed:focus,.fbTimelineAllActivityStorySelector .openToggler .uiButtonSuppressed:hover,.fbTimelineAllActivityAudienceSelector .openToggler .uiSelectorButton,.fbTimelineAllActivityAudienceSelector .openToggler .uiSelectorButton:active,.fbTimelineAllActivityAudienceSelector .openToggler .uiSelectorButton:focus,.fbTimelineAllActivityAudienceSelector .openToggler .uiSelectorButton:hover,.fbTimelineAllActivityAudienceSelector .openToggler .uiButtonSuppressed:active,.fbTimelineAllActivityAudienceSelector .openToggler .uiButtonSuppressed:focus,.fbTimelineAllActivityAudienceSelector .openToggler .uiButtonSuppressed:hover{background-image:none}
+.timelineAllActivityStream .timelineMinistoryGroup .logstoryMessage{color:#333}
+.timelineAllActivityStream .timelineMinistoryGroup{padding:7px 0 3px 0}
+.timelineMinistoryGroup .uiStreamStory{margin-bottom:0}
+.timelineLogStoryShowAll{padding:10px 0 5px 85px}
+.logStoryDescription{width:340px;padding-right:20px}
+.logStoryIcons{text-align:right;width:100px}
+.logStoryContent{width:225px}
+.logStoryControls{width:70px}
+.logStoryContent .uiAttachmentDesc{display:none}
+.logStoryContent .uiStreamAttachments .external .img{width:30px;height:30px}
+.logStoryContent .uiVideoThumb .img{max-width:80px;max-height:80px}
+.logStoryContent .button_small.artwork_button .music_button_img{background-position:0 24px}
+#wall{padding-top:15px}
+.wall #wall{width:540px}
+
+#bootloader_tHafk { height: 42px; }

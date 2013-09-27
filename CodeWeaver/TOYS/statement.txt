@@ -1,0 +1,63 @@
+Jack and Jill are fond of toys. One day, tired of playing from same toys again and again, they decided to play a new game. In this game they arranged N toys (T_1, T_2,..., T_N) in a row and selected a number K. Jack starts the game and they alternate turn. In their turn they can select any 'continuous' sequence of K toys from the current toy sequence and remove them (see note). The person who is unable to make a move in their turn will be loser of this game. If they both play optimally, find who is going to be the winner.
+
+Note:
+	Originally there are N toys, namely T_1, T_2, ..., T_N, arranged in a row.
+	A continuous sequence [p, q] is a sequence T_p, T_(p+1), T_(p+2), ..., T_q.
+	If at any given instant of time, they have the sequence T1, T2, T5, T6, T10, then all possible 'continuous' sequence are (T1), (T1, T2), (T2), (T5), (T5, T6), T(6), T(10)
+
+Input:
+	In the first line of input there are two integers T and K, number of test cases and the number of continuous toys which can be removed in a turn.
+	Then follows T lines containing a single integer N, number of toys in the original arrangement.
+
+Output:
+	For each test case, print "Jack" (without quotes) if he is going to win, otherwise "Jill" (again without quotes) in separate lines. 
+
+Constraints:
+	1 <= T, K, N <= 1000
+
+
+Sample Input #0:
+	8 1
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+
+Sample Output #0:
+	Jack
+	Jill
+	Jack
+	Jill
+	Jack
+	Jill
+	Jack
+	Jill
+
+
+Sample Input #1:
+	4 3
+	2
+	3
+	6
+	8
+
+Sample Output #1:
+	Jill
+	Jack
+	Jack
+	Jill
+
+
+Explanation
+For Sample Input #0, as K = 1, players are allowed to remove only one toy in their turn. So for even number of toys Jill will always end the game thus being winner, and for odd Jack will.
+
+For Sample Input #1, there are 4 test cases and K = 3, i.e., players are allowed to remove a continuous sequence of 3 toys.
+	Test #1: N = 2, Jack can't proceed as there are already less then 3 toys.
+	Test #2: N = 3, Jack can remove all 3 balls, so Jill is not left with any toy to proceed.
+	Test #3: N = 6, There are originally 6 toys, {T_1, T_2, T_3, T_4, T_5, T_6}. Jack start by removing toys {T_2, T_3, T_4}. Thus Jill is left with toy sequence {T_1, T_5, T_6}. As there is no continuous sequence of size 3, Jill can't make a move and so doomed to loose.
+	Test #4: N = 8, For whatever the move Jack made, he is doomed to loose if Jill play optimally, and he will play optimally :).
+

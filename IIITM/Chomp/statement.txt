@@ -1,0 +1,88 @@
+Mr. Kala and Mr. UD are both fond of chocolate (and ofcourse Nusrat). A chocolate bar can be represented as a 3xN block of bars. On a particular day the leftmost-lowest block has been mixed with a very bitter ingredient by a mischievous friend Mr. AnimeKING. He then gave that single chocolate to them and told about his mischeif. 
+
+Mr. AnimeKING asked them to play a game with the given chocolate. A move of game consists of eating a block of bar along with all the blocks of bar which lies on the right and above it. Player alternate moves, and the person who eats the leftmost-lowest (bitter) block of bar is declared loser.
+
+Example:
+	For a chocolate of size 3x8. Block (1, 1) had been bittered.
+	
+Player 1:	Choses a block at (2, 6) to eat.
+    _ _ _ _ _ _ _ _  
+3  |_|_|_|_|_|_|_|_|
+2  |_|_|_|_|_|x|_|_|
+1  |.|_|_|_|_|_|_|_|
+    1 2 3 4 5 6 7 8
+
+
+
+Player 2:	Choses a block at (3, 3) to eat.
+    _ _ _ _ _ 
+3  |_|_|x|_|_|
+2  |_|_|_|_|_|_ _ _
+1  |.|_|_|_|_|_|_|_|
+    1 2 3 4 5 6 7 8
+
+
+Player 1:	Choses a block at (1, 2) to eat.
+    _ _
+3  |_|_|_ _ _
+2  |_|_|_|_|_|_ _ _
+1  |.|x|_|_|_|_|_|_|
+    1 2 3 4 5 6 7 8
+
+
+Player 2:	Choses a block at (2, 1) to eat.
+    _ 
+3  |_|
+2  |x|
+1  |.|
+    1
+
+
+Player 1:	Doesn't have any option. So had to eat the bitter part of chocolate and be the loser.
+    _ 
+1  |.|
+    1
+
+Of course this is not an optimal game.
+
+As player 1 realised that he is noob after playing some steps, he ask you to help him to find whether now there exists any chance for him to win. Player 2 is expert at this game.
+
+Given number of bar' blocks in row1, row2 and row3 (row1 >= row2 >= row3) and *its player 1 turn*, find that if from now he play optimally whether he can win the game or not.
+
+
+Input
+First line of input containts number of test cases T. Then follows T lines, each line containing three positive integers row1, row2, row3, number of blocks of bar in row 1, row 2 and row 3 respectively.
+
+Output:
+For each input, tell whether player 1 can win if he play optimally or not. Print "WIN" if player 1 can win, otherwise print "LOSE" (quotes for clarity).
+
+Constraint: 
+	a)  1 <= row1 <= 100
+	b)  0 <= row3 <= row2 <= row1
+	b)	Now it's player 1' turn.
+	d) 	0 < T <= 10^4
+	e)  Both players play optimally.
+
+Sample Input:
+2
+1 1 1
+2 2 1
+
+Sample Output:
+WIN
+LOSE
+
+
+Explanation for first test case:
+
+	Player 1: Eats block (2, 1).
+    _
+3  |_|
+2  |x|
+1  |.|
+    1
+	
+	Player2: Does'nt have any option other than to eat block (1, 1) and lose, thus Player 1 WIN.
+    _
+1  |.|
+    1

@@ -1,0 +1,111 @@
+<html><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="572610297973_data/base.css" type="text/css">
+</head><body>
+<center>
+<table width="100%" cellpadding="20">
+<tbody><tr>
+<td id="Base"><p>
+The wizards and witches of Hogwarts School of Witchcraft found Prof. 
+Binn's History of Magic lesson to be no less boring than you found your 
+own history classes.  Recently Binns has been droning on about Goblin 
+wars, and which goblin civilization fought which group of centaurs where
+ etc etc.  The students of Hogwarts decided to use the new-fangled 
+computer to figure out the outcome of all these wars instead of 
+memorizing the results for their upcoming exams.  Can you help them?
+<br>
+The magical world looks like a 2-D R*C grid. Initially there are many 
+civilizations, each civilization occupying exactly one cell. A 
+civilization is denoted by a lowercase letter in the grid. There are 
+also certain cells that are uninhabitable (swamps, mountains, sinkholes 
+etc.) - these cells are denoted by a '#' in the grid. All the other 
+cells - to which the civilizations can move  - are represented by a '.' 
+in the grid.
+<br>
+A cell is said to be adjacent to another cell if they share the same 
+edge - in other words, for a cell (x,y), cells (x-1, y), (x, y-1), (x+1,
+ y), (x, y+1) are adjacent, provided they are within the boundaries of 
+the grid.   Every year each civilization will expand to all unoccupied 
+adjacent cells. If it is already inhabited by some other civilization, 
+it just leaves the cell alone. It is possible that two or more 
+civilizations may move into an unoccupied cell at the same time - this 
+will lead to a battle between the civilizations and the cell will be 
+marked with a '*'. Note that the civilizations fighting in a particular 
+cell do not try to expand from that cell, but will continue to expand 
+from other cells, if possible.
+<br>
+Given the initial grid, output the final state of the grid after no 
+further expansion by any civilization is possible.
+<br><br>
+ 
+
+Input :
+<br>
+The first line contains T, the number of cases. This is followed by T 
+test case blocks.
+<br>
+Each test case contains two integers, R, C.
+<br>
+This is followed by R lines containing a string of length C. The j-th 
+letter in the i-th row describes the state of the cell in year 0.
+<br>
+Each cell is either a
+<br>
+1. '.' which represents an unoccupied cell
+<br>
+2. '#' which represents a cell that cannot be occupied
+<br>
+3. A civilization represented by a lowercase letter ('a' - 'z')<br><br>
+Output :<br><br>
+
+For each test case, print the final grid after no expansion is possible.
+ Apart from the notations used in the input, use '*' to denote that a 
+battle is being waged in that particular cell. <br><br>
+
+Print a blank line at the end of each case.<br>
+Constraints:<br>
+1 &lt;= R, C &lt;= 500<br>
+1 &lt;= T &lt;= 5<br>
+Sample Input:<br><br>
+4<br>
+3 5<br>
+#####<br>
+a...b<br>
+#####<br>
+3 4<br>
+####<br>
+a..b<br>
+####<br>
+3 3<br>
+#c#<br>
+a.b<br>
+#d#<br>
+3 3<br>
+#c#<br>
+...<br>
+a.b<br>
+
+Sample Output:<br><br>
+#####<br>
+aa*bb<br>
+#####<br>
+<br>
+####<br>
+aabb<br>
+####<br>
+<br>
+#c#<br>
+a*b<br>
+#d#<br>
+<br>
+#c#<br>
+acb<br>
+a*b<br>
+<br>
+</p>
+</td>
+</tr>
+</tbody></table>
+</center>
+</body></html>

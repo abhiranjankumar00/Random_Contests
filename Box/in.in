@@ -1,0 +1,33 @@
+8
+BOUND 2
+SET a 2
+SET b 4
+GET b
+PEEK a
+SET c 5
+GET a
+DUMP
+
+21
+BOUND 5
+DUMP
+SET naimish kumar
+SET abhi ranjan
+DUMP
+SET naimish deva
+PEEK kumar
+GET arpan
+GET naimish
+SET arpan khare
+SET phani kumar
+SET swapnil bholu
+SET vinod chaud
+GET naimish
+GET naimish
+GET naimish
+PEEK abhi
+GET arpan
+DUMP
+BOUND 3
+DUMP
+

@@ -1,0 +1,40 @@
+Shinchan and Kazama are very fond of trees. Kazama is a smart boy and always learn topics which are supposed to appear in higher standard. This time he has learnt about the trees that were used in graph theory. He gives the description of a tree and a set of nodes, he asked Shinchan to find the lowest common ancestor for them.
+
+A tree can be defined recursively as a collection of nodes (starting at a root node), where each node consists a list of references to nodes (ie "children"), with the constraints that no reference is duplicated, and none points to the root. 
+[A simple defintion: A tree is a connected acyclic simple graph rooted at a specific node.]
+
+Here tree consists of N nodes with each node having a unique index between 0 and N-1, inclusively. The root is indexed 0. We are given a list of N-1 nodese p_1, p_2...p_N-1, where p_i is the parent of i'th node. Along with this, we are also provided a list of M nodes {u_0, u_1...u_M-1} for which Shinchan have to find the lowest common ancestor.
+
+Lowest Common Ancestor: Let T be a rooted tree with N nodes. Then the lowest common ancestor for a set of nodes U {u_0, u_1...u_(M-1)} is the lowest node, v, for which subtree rooted at v contains all the nodes in set U.
+
+Input:
+First line of input contains a integer N, number of nodes in the tree. Then in the following line there are N-1 space separated integers p_1, p_2...p_N-1, where p_i is the parent of i'th node. Then in next line there is an integer M. In next line we have M space separated integers, u_0, u_1...u_M-1, representing the nodes of set U.
+
+Constraints:
+2 <= N <= 10^5
+1 <= M <= 10
+u_i != u_j, 0 <= i, j < M AND i != j
+
+Output
+Print the id of lowest common ancestor of U.
+
+Sample Input
+10
+0 0 0 1 2 2 4 4 4 
+3
+7 8 9 
+
+Sample Output
+4
+
+Sample Input #2
+5
+0 0 2 2
+2
+2 4
+Sample Output #2
+2
+
+Explanation
+Sample Input: Tree have following edges (0, 1), (0, 2), (0, 3), (1, 4), (2, 5), (2, 6), (4, 7), (4, 8), (4, 9). So lowest common ancestor for {7, 8, 9} will be 4.
+Sample Input #2: Here tree have 4 edges viz (0, 1), (0, 2) (2, 3), (2,4). So lowest common ancestor for {2, 4} will be 2.

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>TOYS</title>
+<meta name="Generator" content="Vim/7.3">
+<meta name="plugin-version" content="vim7.3_v10">
+<meta name="syntax" content="none">
+<meta name="settings" content="use_css,pre_wrap">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; }
+body { font-family: monospace; }
+-->
+</style>
+</head>
+<body>
+<pre>
+Jack and Jill are fond of toys. One day, tired of playing from same toys again and again, they decided to play a new game. In this game they arranged N toys (T<sub>1</sub>, T<sub>2</sub>,..., T<sub>N</sub>) in a row and selected a number K. Jack starts the game and they alternate turn. In their turn they can select any 'continuous' sequence of K toys from the current toy sequence and remove them (see note). The person who is unable to make a move in their turn will be loser of this game. If they both play optimally, find who is going to be the winner.
+
+Note:
+	- Originally there are N toys, namely T<sub>1</sub>, T<sub>2</sub>, ..., T<sub>N</sub>, arranged in a row.
+	- A continuous sequence [p, q] is a sequence T<sub>p</sub>, T<sub>p+1</sub>, T<sub>p+2</sub>, ..., T<sub>q</sub>.
+	- If at any given instant of time, they have the sequence T<sub>1</sub>, T<sub>2</sub>, T<sub>5</sub>, T<sub>6</sub>, T<sub>10</sub>, then all possible 'continuous' sequence are {T<sub>1</sub>}, {T<sub>1</sub>, T<sub>2</sub>}, {T<sub>2</sub>}, {T<sub>5</sub>}, {T<sub>5</sub>, T<sub>6</sub>}, {T<sub>6</sub>}, {T<sub>10</sub>}.
+
+Input:
+	In the first line of input there are two integers T and K, number of test cases and the number of continuous toys which can be removed in a turn.
+	Then follows T lines containing a single integer N, number of toys in the original arrangement.
+
+Output:
+	For each test case, print &quot;Jack&quot; (without quotes) if he is going to win, otherwise &quot;Jill&quot; (again without quotes) in separate lines.
+
+Constraints:
+	1 &lt;= T, K, N &lt;= 1000
+
+
+Sample Input #0:
+8 1
+1
+2
+3
+4
+5
+6
+7
+8
+
+Sample Output #0:
+Jack
+Jill
+Jack
+Jill
+Jack
+Jill
+Jack
+Jill
+
+
+Sample Input #1:
+4 3
+2
+3
+6
+8
+
+Sample Output #1:
+Jill
+Jack
+Jack
+Jill
+
+
+Explanation
+For Sample Input #0, as K = 1, players are allowed to remove only one toy in their turn. So for even number of toys Jill will always end the game thus being winner, and for odd Jack will.
+
+For Sample Input #1, there are 4 test cases and K = 3, i.e., players are allowed to remove a continuous sequence of 3 toys.
+	Test #1: N = 2, Jack can't proceed as there are already less then 3 toys.
+	Test #2: N = 3, Jack can remove all 3 toys, so Jill is not left with any toy to proceed.
+	Test #3: N = 6, There are originally 6 toys, {T<sub>1</sub>, T<sub>2</sub>, T<sub>3</sub>, T<sub>4</sub>, T<sub>5</sub>, T<sub>6</sub>}. Jack start by removing toys {T<sub>2</sub>, T<sub>3</sub>, T<sub>4</sub>}. Thus Jill is left with toy sequence {T<sub>1</sub>, T<sub>5</sub>, T<sub>6</sub>}. As there is no continuous sequence of size 3, Jill can't make a move and so doomed to loose.
+	Test #4: N = 8, For whatever the move Jack made, he is doomed to loose if Jill play optimally, and he will play optimally :).
+
+</pre>
+</body>
+</html>

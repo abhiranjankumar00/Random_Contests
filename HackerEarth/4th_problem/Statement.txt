@@ -1,0 +1,36 @@
+Problem: Change, Level: Medium (Greedy)
+
+Shinchan's mom has asked Shinchan to go to market and buy some groceries for dinner. But wait, she don't know how much they will cost. Being a experienced housewife, she know that the maximum possible cost of these groceries can be C. But she can't say about minimum cost so let it be 1. That is cost of groceries can be any integer between 1 and C, inclusive.
+
+In Kasukabe, Shinchan's land, we have N types of coin of different value. Let these values be V = {v_1, v_2, ..., v_N}. Given these values and C, maximum cost of grocery, help Shinchan in finding minimum number of coins he need to take to market so that he can buy the groceries. He can have any number of coins of any given value.
+
+Constraints:
+1 <= C <= 10^5
+1 <= N <= 10^5
+1 <= v_i <= 10^5	, i <- [1, N]
+All elements of V are distinct.
+
+Input
+In first line we have two space separated integer, C N, maximum possible cost of grocery and number of types of coins. In next line there are N space separated integers, values of different types of coins.
+
+Output
+Print the minimum number of coins Shinchan can take to market so that he can pay any value between 1 and C, inclusive. If it is not possible then print -1.
+
+Sample Input #0:
+20 4
+1 2 5 10
+
+Sample Output #0:
+5
+
+Sample Input #1:
+4 2
+2 5
+
+Sample Output #1:
+-1
+
+
+Explanation for sample cases:
+Case #0: One possible set is {1, 2, 2, 5, 10}. Using coins from this set we can create any value between 1 to 20, inclusive.
+Case #1: We can only create value 2 and 4 using this set of coins but not 1 and 3.
