@@ -4,7 +4,7 @@ HOW TO WRITE A LRU CACHE
 Basics
 ---
 
-We will need a _counter_ to represent the order of access of elements. If _x_ is accessed at the beginning then it's `access_counter[x]=0`. If _y_ is accessed next then `access_counter[y]=1`. If after that _x_ is accessed then we update `access_counter[x] = 2`.  
+We will need a _counter_ to represent the order of access of elements. If _x_ is accessed at the beginning then it's `counter[x]=0`. If _y_ is accessed next then `counter[y]=1`. If after that _x_ is accessed then we update `counter[x] = 2`.  
 
 Two hashmaps are requred. One will map each `key` to `(value, counter_val)` pair. And other will be a helper hashmap which maps `counter_val` variable to the `key`.
 
