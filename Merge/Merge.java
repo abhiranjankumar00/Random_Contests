@@ -14,6 +14,7 @@ class Merge
 
     int aIdx = 0, bIdx = 0, idx = 0;
 
+    // Adds smaller element to array
     while(aIdx < a.length && bIdx < b.length) {
       if(a[aIdx] < b[bIdx]) 
         ans[idx++] = a[aIdx++];
@@ -21,6 +22,7 @@ class Merge
         ans[idx++] = b[bIdx++];
     }
 
+    // Add remaining element to the array
     while(aIdx < a.length)
       ans[idx++] = a[aIdx++];
     while(bIdx < b.length)
