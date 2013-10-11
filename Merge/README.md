@@ -25,7 +25,7 @@ MERGE TWO SORTED ARRAY
     while(aIdx < N)
         ans[idx++] = a[aIdx++]
 
-    while(bIdx < N)
+    while(bIdx < M)
         ans[idx++] = b[bIdx++]
 
 
