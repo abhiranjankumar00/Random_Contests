@@ -13,7 +13,7 @@ MERGE TWO SORTED ARRAY
     aIdx = 0, bIdx = 0
     idx = 0
 
-    // Finds the smallest element pointed by aIdx and bIdx and add that to final array.
+    // Find smaller element pointed by aIdx and bIdx and add that to final array.
     while aIdx < N && bIdx < M {
         if(a[aIdx] < b[bIdx])
             ans[idx++] = a[aIdx++]
