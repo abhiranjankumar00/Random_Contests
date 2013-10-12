@@ -1,14 +1,87 @@
 HOW TO WRITE A LRU CACHE
 ===
 
-Basics
----
+##Method #1
+
+**Inspiration**   
+Inspired from [GeeksForGeeks](http://www.geeksforgeeks.org/implement-lru-cache/).
+
+**Requirements**   
+Two data structure is required to represent a whole lru cache.   
+
+- A doubly linked list that will represent the real lru. Each node will contain a value and it's respective key as an auxilary variable. Head of list will be most recently used element, and last will be least recently used element.
+
+- A hasmap that will store location of the respective node, in the linked list, associated with a key.
+
+**Pseudo Code**   
+```
+    class Node {
+        string value, key;
+        Node next, prev;
+    } 
+
+    Node head = null, last = null;  // It will represent head and last of linked list.
+
+    HashMap <String, Node> hs;      // Maps key with respective node in list.
+ 
+    string get(string key) {
+        Node node = hs.get(key);
+
+        if(node == null) {    // Cache not found. Call a cache miss.
+            data <- fetch element from main memory.
+            set(key, data);
+            return data;
+        }
+
+        // If node != null, delete it from current position in linked list and move it to head.
+        ...
+        ...
+        ...
+        return node.value;
+    }
+
+    void set(string key, string val) {
+        Node node = hs.get(key);
+
+        if(node == null) {
+            node = new Node(val, key);
+            hs.set(key, node);
+            PushToHead(node);
+            resize();
+        }
+        else {
+            node.val = val;
+            // Delete node to head in list.
+            ...
+            ...
+            ...
+        }
+    }
+
+    void resize() {
+        while(size(list) > LRU_SIZE) {
+            // Purge the entry of last node from hashmap and remove it from list.
+            ...
+            ...
+            ...
+        }
+    }
+
+
+```
+
+
+
+
+##Method #2
+
+**Basics**   
 
 We will need a _counter_ to represent the order of access of elements. If _x_ is accessed at the beginning then it's `counter[x]=0`. If _y_ is accessed next then `counter[y]=1`. If after that _x_ is accessed then we update `counter[x] = 2`.  
 
 Two hashmaps are requred. One will map each `key` to `(value, counter_val)` pair. And other will be a helper hashmap which maps `counter_val` variable to the `key`.
 
-###Code With Explanation
+**Code With Explanation**   
 
 ```
     class Pair {
