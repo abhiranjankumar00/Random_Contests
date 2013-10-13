@@ -1,107 +1,120 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void dfs(int u, int par, int curDist, int &ans, int &ansLen, const vector <vector<int> > &G, vector <bool> &vis, const bool &flag) {
-  if(vis[u]) {
-    if(flag && curDist-1 > ansLen) {
-      ansLen = curDist-1;
-      ans = par;
-    }
-    return;
+const int sz = 2e5 + 111;
+int N;
+vector <int> G[sz];
+bool vis[sz];
+bool in[sz];
+int par[sz], ht[sz];
+bool flag;
+set < pair <int, int>, greater<pair <int, int> > > leaves;
+
+void dfs1(int u, int p, int curNodes, int &maxNodes, int &repNode) {
+  par[u] = p;
+  if(curNodes > maxNodes) {
+    repNode = u;
+    maxNodes = curNodes;
   }
-  if(flag == false && curDist > ansLen) {
-    ans = u;
-    ansLen = curDist;
+  for(auto it = (G[u]).begin(); it != (G[u]).end(); ++it) if(*it != p) {
+    dfs1(*it, u, curNodes+1, maxNodes, repNode);
   }
-  for(auto it = (G[u]).begin(); it != (G[u]).end(); ++it) if(*it != par) 
-    dfs(*it, u, curDist+1, ans, ansLen, G, vis, flag);
 }
 
-bool tracePath(int u, int par, int v, const vector <vector<int> > &G, vector <bool> &vis) {
-  if(u==v) {
-//    printf("%d ", u+1);
-    return vis[u] = true;
+void tracePath(int from, int to) {
+  while(from != to && in[from] == false) {
+    in[from] = true;
+    from = par[from];
   }
-  if(vis[u])
-    return false;
-  for(auto it = (G[u]).begin(); it != (G[u]).end(); ++it)
-    if(*it != par) 
-      if(tracePath(*it, u, v, G, vis)){
-//        printf("%d ", u+1);
-        return vis[u] = true;
-      }
-  return false;
+  if(from == to) {
+    in[from] = true;
+  }
+}
+
+int getHeightUpward(int u) {
+  int &ret = ht[u];
+  if(ret != -1)
+    return ret;
+  if(in[u])
+    return ret = 0;
+  ret = getHeightUpward(par[u]) + 1;
+  if(G[u].size() ==1)
+    leaves.insert(make_pair(ret, u));
+  return ret;
+}
+
+void updateHeightDownward(int u, int h) {
+  if(G[u].size() == 1) {
+    leaves.erase(make_pair(ht[u], u));
+    ht[u] = h;
+    leaves.insert(make_pair(h, u));
+  }
+  for(auto it = (G[u]).begin(); it != (G[u]).end(); ++it) if(*it != par[u]){
+    updateHeightDownward(*it, h+1);
+  }
 }
 
 int main()
 {
-  int N;
+  int u, v;
   cin >> N;
-  vector <vector<int> > G(N);
-  vector <bool> vis(N, false);
-  set <int> leaves;
-  
+
   for(int i = 0; i < (int)N-1; ++i) {
-    int u, v;
-    scanf("%d %d\n", &u, &v);
+    cin >> u >> v;
     u--; v--;
     G[u].push_back(v);
     G[v].push_back(u);
   }
 
-  for(int i = 0; i < (int)N; ++i) 
-    if(G[i].size() ==1)
-      leaves.insert(i);
-
   int curAns = 1;
   printf("%d\n", curAns);
 
-  if(N == 1) 
+  if(N == 1)
     return 0;
 
-// dfs(u, par, curDist, &ans, &ansLen, &G, &vis) {
-  
-  int u, v=-1, dist = 0;
-  bool flag = false;
-  dfs(0, -1, 1, u, dist, G, vis, false);
-  dist = 0;
-  dfs(u, -1, 1, v, dist, G, vis, false);
-  leaves.erase(u);
-  leaves.erase(v);
-  tracePath(u, -1, v, G, vis);
-//  cout << "\n";
-//  printf("Leaves removed: %d, %d\n", u, v);
+  int p1 = -1, p2 = -1, maxNodes = 0;
+  maxNodes = 0;
+  dfs1(0, -1, 1, maxNodes, p1);
+  maxNodes = 0;
+  dfs1(p1, -1, 1, maxNodes, p2);
 
-  curAns = dist;
+  tracePath(p2, p1);
+  leaves.erase(make_pair(ht[p1], p1));
+  leaves.erase(make_pair(ht[p2], p2));
+
+  curAns = maxNodes;
+
   printf("%d\n", curAns);
 
-  flag = true;
-  int mxDist;
+  if(N == 2)
+    return 0;
+
+  memset(ht, -1, sizeof(ht));
+  for(int i = 0; i < (int)N; ++i) {
+    getHeightUpward(i);
+  }
+
   for(int i = (int)3; i <= (int)N; ++i) {
-    if(leaves.empty() ){
+    if(leaves.empty()) 
       printf("%d\n", N);
-    }
     else {
-      v = mxDist= -1;
-      int kill = -1;
-      for(auto it = (leaves).begin(); it != (leaves).end(); ++it) {
-        u = -1;
-        dist = 0;
-// dfs(u, par, curDist, &ans, &ansLen, &G, &vis) {
-        dfs(*it, -1, 1, u, dist, G, vis, flag);
-        if(dist > mxDist) {
-          v = *it;
-          kill = u;
-          mxDist = dist;
-        }
-      }
-      tracePath(v, -1, kill, G, vis);
-//      cout << "\n";
-      curAns += mxDist;
-      leaves.erase(v);
+      curAns += leaves.begin()->first;
       printf("%d\n", curAns);
+      u = leaves.begin()->second;
+      in[u] = true;
+      u = par[u];
+      leaves.erase(leaves.begin());
+
+      while(in[u]==false) {
+        in[u] = true;
+        for(auto it = (G[u]).begin(); it != (G[u]).end(); ++it) if(*it!=par[u] && !in[*it]){
+          updateHeightDownward(*it, 1);
+        }
+        u = par[u];
+      }
     }
   }
+
 
   return 0;
 }
