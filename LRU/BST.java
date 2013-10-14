@@ -22,7 +22,7 @@ public class BST {
     if(leftNodes == -1 || rightNodes == -1) 
       return -1;
 
-    // If current node is greater than left node then it has a invalid subtree.
+    // If current node is less than or equal to left node then it has a invalid subtree.
     if(nd.left != null && nd.left.val >= nd.val)
       return -1;
 
