@@ -28,6 +28,8 @@ typedef long long 		int64;
 
 int main()
 {
+  int a[] = {3};
+  a[4] =4;
 
 	return 0;
 }
