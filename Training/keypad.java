@@ -29,7 +29,7 @@ class Main
     backtrack(0, cur, keys);
   }
 
-	public static void main(String [] args) throws Exception
+  public static void main(String [] args) throws Exception
   {
     String keys[] = {"abc", "def", "ghi"};
     solve(keys);
