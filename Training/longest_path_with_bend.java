@@ -1,7 +1,7 @@
 /*  LOGIC
  *  For each node, find the two children with greatest heights.
- *  Add these heights to get the largest path, with one bend, which
- *  passess through (or bends at) current node.
+ *  Add these heights to get the largest path which bends at
+ *  current node.
  *  Do this for each node recursively.
 */
 import java.io.*;
