@@ -33,4 +33,3 @@ Sample Output #1:
 
 Explanation for sample cases:
 Case #0: One possible set is {1, 2, 2, 5, 10}. Using coins from this set we can create any value between 1 to 20, inclusive.
-Case #1: We can only create value 2 and 4 using this set of coins but not 1 and 3.
